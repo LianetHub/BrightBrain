@@ -1,0 +1,333 @@
+.product-card {
+	padding: 0 0 rem(50) 0;
+	// .product-card__container
+	&__container {
+	}
+	// .product-card__content
+	&__content {
+		display: flex;
+		gap: rem(24);
+		flex-direction: column;
+		@media (min-width: $md4) {
+			flex-direction: row;
+		}
+	}
+	// .product-card__sidebar
+	&__sidebar {
+		@media (min-width: $md4) {
+			flex: 0 0 rem(220);
+		}
+		@media (min-width: $md2) {
+			flex: 0 0 rem(300);
+		}
+	}
+	&__sidebar-catalog {
+		@media (min-width: $md4) {
+			display: none;
+		}
+	}
+	&__sidebar-body {
+		display: none;
+		margin-top: 1rem;
+		@media (min-width: $md4) {
+			margin-top: 0;
+			display: block !important;
+		}
+	}
+	// .product-card__list
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+	// .product-card__body
+	&__body {
+		min-width: 0;
+		flex: 1 1 auto;
+	}
+	// .product-card__header
+	&__header {
+		display: grid;
+		gap: rem(24);
+		@media (min-width: $md3) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	// .product-card__slider
+	&__slider {
+		min-width: 0;
+	}
+	// .product-card__slider-main
+	&__slider-main {
+		aspect-ratio: 1;
+		overflow: hidden;
+		border-radius: 0.5rem;
+	}
+	// .product-card__slide
+	&__slide {
+		cursor: zoom-in;
+		height: auto;
+	}
+	// .product-card__prev
+	&__prev {
+	}
+	// .product-card__next
+	&__next {
+	}
+	// .product-card__slider-thumbs
+	&__slider-thumbs {
+		margin-top: 1rem;
+	}
+	// .product-card__slider-thumb
+	&__slider-thumb {
+		width: rem(98);
+		height: rem(79);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		border-radius: rem(8);
+		border: rem(1) solid transparent;
+		transition: border-color 0.3s ease;
+		cursor: pointer;
+		&.swiper-slide-thumb-active {
+			border-color: $accent;
+		}
+	}
+	// .product-card__main
+	&__main {
+		padding-top: 1rem;
+	}
+	// .product-card__title
+	&__title {
+		line-height: math.div(51, 35);
+		font-size: rem(26);
+		@media (min-width: $md4) {
+			font-size: rem(35);
+		}
+	}
+	// .product-card__info
+	&__info {
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	// .product-card__actions
+	&__actions {
+		margin-top: 1.5rem;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+	// .product-card__action
+	&__action {
+		&.btn.btn-sm {
+			padding: 0.65rem 1.75rem;
+			&::before {
+				order: -1;
+				font-size: 1rem;
+			}
+		}
+	}
+	// .product-card__btns
+	&__btns {
+		margin-top: 2rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	// .product-card__btn
+	&__btn {
+		width: rem(30);
+		height: rem(30);
+		background: #f3f3f3;
+		border-radius: 50%;
+		&:not(.favorite-btn) {
+			transition: background-color 0.3s ease;
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: darken($color: #f3f3f3, $amount: 10);
+				}
+			}
+		}
+	}
+	// .product-card__props
+	&__props {
+		margin-top: 3rem;
+		.product__props {
+			font-size: rem(18);
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+		}
+	}
+	// .product-card__props-title
+	&__props-title {
+		color: rgba($color: #000000, $alpha: 0.5);
+		font-size: 16px;
+		line-height: math.div(23, 16);
+		margin-bottom: 1rem;
+	}
+
+	// .product-card__benefits
+	&__benefits {
+		margin-top: rem(48);
+		display: grid;
+		gap: rem(24);
+		@media (min-width: $md3) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: $md2) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	// .product-card__benefit
+	&__benefit {
+		align-items: center;
+		background: #fff;
+		border-radius: rem(6);
+		box-shadow: 0 0 rem(23) rgba(0, 0, 0, 0.1);
+		display: flex;
+		gap: rem(10);
+		height: 100%;
+		padding: rem(11) rem(15);
+	}
+	// .product-card__benefit-icon
+	&__benefit-icon {
+		width: rem(68);
+		flex-shrink: 0;
+	}
+	// .product-card__benefit-desc
+	&__benefit-desc {
+		color: $text-06;
+		font-size: rem(18);
+	}
+	// .product-card__tabs
+	&__tabs {
+		margin-top: 3rem;
+		.tabs__btns {
+			justify-content: flex-start;
+			border-bottom: rem(1) solid #ededed;
+			@media (max-width: $md5) {
+				display: none;
+			}
+		}
+		.tabs__content {
+			@media (max-width: $md5) {
+				display: block;
+				opacity: 1;
+			}
+		}
+		.tabs__btn {
+			box-shadow: none;
+			text-transform: uppercase;
+			font-size: rem(13);
+			padding: 1rem 2rem;
+			font-weight: 600;
+			&.active {
+				color: $accent;
+				padding: 1rem 2rem;
+				background: transparent;
+				border-bottom: rem(2) solid $accent;
+			}
+			color: #000;
+			@media (any-hover: hover) {
+				&:hover {
+					background: transparent;
+					color: $accent;
+				}
+			}
+		}
+		.tabs__contents {
+			margin-top: 2rem;
+			@media (max-width: $md5) {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
+			& .h1,
+			h1 {
+				font-size: rem(35);
+				font-weight: 700;
+				line-height: math.div(35, 35);
+				&:not(:last-child) {
+					margin-bottom: rem(15);
+				}
+			}
+
+			& .h6,
+			h6 {
+				margin-bottom: rem(46);
+			}
+
+			& .h3,
+			h3 {
+				font-size: rem(25);
+				font-weight: 700;
+				letter-spacing: 0.02em;
+				line-height: 1;
+				margin: rem(45) 0 rem(27);
+			}
+
+			& .h2,
+			h2 {
+				margin: rem(45) 0 rem(27);
+			}
+
+			& p {
+				font-size: rem(18);
+				letter-spacing: 0.01em;
+				line-height: math.div(26, 18);
+				&:not(:last-child) {
+					margin-bottom: rem(25);
+				}
+			}
+
+			& ul {
+				font-size: rem(18);
+				line-height: math.div(35, 18);
+				text-transform: capitalize;
+				&:not(:last-child) {
+					margin-bottom: rem(25);
+				}
+				& li {
+					position: relative;
+					gap: 0.5rem;
+					line-height: math.div(24, 16);
+					padding-left: 1.5em;
+					&::before {
+						@extend %ic, .icon-check-circle;
+						color: $accent;
+						position: absolute;
+						top: 0;
+						left: 0;
+						min-height: rem(24);
+						padding-top: 0.25em;
+						display: flex;
+						justify-content: center;
+						align-items: flex-end;
+					}
+				}
+			}
+
+			& strong {
+				font-size: rem(20);
+				font-weight: 500;
+			}
+
+			& .columns {
+				@media (min-width: $md3) {
+					column-count: 2;
+					break-inside: avoid;
+					& p {
+						line-height: math.div(27, 18);
+					}
+				}
+			}
+		}
+	}
+}

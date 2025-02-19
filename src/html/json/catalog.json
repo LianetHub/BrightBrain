@@ -1,0 +1,90 @@
+[
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/01.webp",
+        "labels": [
+            "32 товара"
+        ],
+        "title": "Брус строганный сухой",
+        "price": 80,
+        "unit": "₽/шт"
+    },
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/02.webp",
+        "labels": [
+            "60 товаров"
+        ],
+        "title": "Доска обрезная",
+        "price": 9000,
+        "unit": "₽/м³"
+    },
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/03.webp",
+        "labels": [
+            "47 товаров"
+        ],
+        "title": "Доска строганная",
+        "price": 370,
+        "unit": "₽/шт"
+    },
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/04.webp",
+        "labels": [
+            "65 товаров"
+        ],
+        "title": "Имитация бруса",
+        "price": 400,
+        "unit": "₽/м²"
+    },
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/05.webp",
+        "labels": [
+            "102 товара"
+        ],
+        "title": "Вагонка",
+        "price": 150,
+        "unit": "₽/шт"
+    },
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/06.webp",
+        "labels": [
+            "48 товаров"
+        ],
+        "title": "Половая доска",
+        "price": 700,
+        "unit": "₽/м²"
+    },
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/07.webp",
+        "labels": [
+            "33 товара"
+        ],
+        "title": "Клееный брус",
+        "price": 52000,
+        "unit": "₽/м³"
+    },
+    {
+        "className": "catalog__item",
+        "imageSize": "image-sm",
+        "image": "@img/catalog/08.webp",
+        "labels": [
+            "53 товара"
+        ],
+        "title": "Фанера",
+        "price": 450,
+        "unit": "₽/Лист"
+    }
+]

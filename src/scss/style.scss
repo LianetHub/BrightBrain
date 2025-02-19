@@ -1,0 +1,78 @@
+// Использование модулей SASS
+@use "sass:math";
+// Использование модулей SASS
+// ======================================МИКСИНЫ==============================================
+@import "mixins";
+// ======================================МИКСИНЫ==============================================
+
+// ======================================ШРИФТЫ===============================================
+@import "fonts";
+@import "icons";
+// ======================================ШРИФТЫ===============================================
+
+// Шрифт по умолчанию
+$fontfamily: "Roboto";
+$font-montserrat: "Montserrat";
+// Шрифт по умолчанию
+
+$md1: 1399.98px;
+$md2: 1199.98px;
+$md3: 991.98px;
+$md4: 767.98px;
+$md5: 575.98px;
+$md6: 389.98px;
+
+// ПЕРЕМЕННЫЕ
+
+$minWidth: 320; // Минимальная ширина страницы
+$maxWidth: 1920; // Ширина макета
+$maxWidthContainer: rem(1320); // Максимальная ширина ограничивающего контейнера
+$containerPadding: 30;
+
+// ЦВЕТА
+
+$white: #fff;
+$text: var(--primary);
+$text-01: var(--primary-01);
+$text-02: var(--primary-02);
+$text-03: var(--primary-03);
+$text-04: var(--primary-04);
+$text-05: var(--primary-05);
+$text-06: var(--primary-06);
+$text-07: var(--primary-07);
+$text-08: var(--primary-08);
+$text-09: var(--primary-09);
+
+$accent: var(--accent);
+$accent-06: var(--accent-06);
+$secondary: var(--secondary);
+
+$grey: var(--grey);
+$brown: var(--brown);
+$brownDark: var(--brown-dark);
+$red: #fa0644;
+
+// Z-Index
+
+$ui-index-1: 1; // Для наполняющих элементов в общем потоке
+$ui-index-2: 2; // Для наполняющих элементов в общем потоке
+$ui-index-3: 3; // Для масок
+$ui-index-4: 4; // Для сайдбаров
+$ui-index-5: 5; // Для модалок
+$ui-index-6: 6; // Для элементов, перекрывающих все
+
+// ОБЩИЕ ПАРАМЕТРЫ
+
+@import "ui";
+@import "forms";
+@import "common";
+@import "header";
+@import "footer";
+
+//=======================================
+
+// СТИЛИ СТРАНИЦ
+
+@import "pages/home";
+@import "pages/catalog";
+@import "pages/product";

@@ -1,0 +1,39 @@
+.breads {
+	padding: rem(50) 0;
+	// .breads__container
+	&__container {
+	}
+	// .breads__list
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	// .breads__item
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		&:not(:last-child) {
+			&::before {
+				@extend %ic, .icon-chevron-right;
+				order: 1;
+
+				font-size: 0.5rem;
+			}
+		}
+	}
+	// .breads__link
+	&__link {
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accent;
+			}
+		}
+		&.active {
+			color: $accent;
+		}
+	}
+}

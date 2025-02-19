@@ -1,0 +1,315 @@
+.form {
+	&__field {
+		width: 100%;
+		& label {
+			line-height: 1;
+			display: inline-block;
+			margin-bottom: 0.5rem;
+		}
+		&.checkbox {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			cursor: pointer;
+			input,
+			label {
+				margin: 0;
+			}
+		}
+	}
+	// .form__control
+	&__control {
+		text-overflow: ellipsis;
+		transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+		width: 100%;
+		font-size: 1rem;
+		line-height: math.div(21, 16);
+		border-radius: rem(6);
+		padding: em(15);
+		border: rem(1) solid rgba(27, 43, 69, 0.31);
+		&::placeholder {
+			opacity: 0.4;
+			color: currentColor;
+		}
+		&:hover,
+		&:focus {
+			border-color: $accent;
+		}
+		&:disabled {
+			background: #ddd;
+			border-color: #ddd;
+		}
+		&._error {
+			outline: 1px solid #ba2028;
+			background: #fff1ed;
+		}
+		&:is(textarea) {
+			height: rem(137);
+			resize: none;
+		}
+	}
+
+	// .form__checkbox
+	&__checkbox {
+		display: inline-block;
+
+		width: fit-content;
+	}
+	// .form__checkbox-input
+	&__checkbox-input {
+		&:checked {
+			& + .form__checkbox-text {
+				&::before {
+					@extend %ic, .icon-check;
+				}
+			}
+		}
+		&.error {
+			& + .form__checkbox-text {
+				&::before {
+					border: rem(1) solid red;
+				}
+			}
+		}
+	}
+
+	// .form__checkbox-text
+	&__checkbox-text {
+		position: relative;
+		display: block;
+		width: fit-content;
+		font-size: 1rem;
+		line-height: 150%;
+		padding: 0 0 0 2.5em;
+		cursor: pointer;
+		user-select: none;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: rem(1) solid $text;
+			width: rem(24);
+			height: rem(24);
+			border-radius: rem(3);
+			color: $accent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&__footer {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	// .form__socials
+	&__socials {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+	}
+	// .form__social
+	&__social {
+		width: rem(48);
+		height: rem(48);
+		font-size: 1.25rem;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		transition: background-color 0.3s ease;
+		&.icon-whatsapp {
+			background: #0dc143;
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: darken($color: #0dc143, $amount: 10);
+				}
+			}
+		}
+		&.icon-telegram {
+			background: #419fd9;
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: darken($color: #419fd9, $amount: 10);
+				}
+			}
+		}
+	}
+
+	// .form__btn
+	&__btn {
+		&.btn {
+			padding: 1rem 3rem;
+			&::before {
+				order: -1;
+				font-size: 1rem;
+			}
+		}
+	}
+	// .form__privacy
+	&__privacy {
+		color: #1b2b45;
+		font-size: rem(14);
+		font-weight: 300;
+		line-height: 1;
+		margin-top: em(18, 14);
+		opacity: 0.3;
+		text-align: center;
+	}
+}
+
+.btn {
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	user-select: none;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+	border-radius: rem(6);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: math.div(24, 16);
+	padding: em(18.5) em(30);
+	gap: 0.5rem;
+	border: rem(1) solid;
+	&::before {
+		order: 1;
+		font-size: 0.65em;
+	}
+	&:focus-visible {
+		box-shadow: 0 0 rem(1) rem(1) $text;
+	}
+	&.btn-primary {
+		background: $accent;
+		border-color: $accent;
+		color: $white;
+		&:hover {
+			background: $white;
+			border-color: $white;
+			color: $accent;
+		}
+		&:active {
+			background: $white;
+			border-color: $accent;
+			color: $accent;
+		}
+	}
+	&.btn-secondary {
+		background: $text;
+		border-color: $text;
+		color: $white;
+		&:hover {
+			background: $white;
+			color: $text;
+		}
+		&:active {
+			background: $white;
+			color: $text-08;
+			border-color: $text-08;
+		}
+	}
+	&.btn-secondary-outline {
+		background: $white;
+		border-color: $text;
+		color: $text;
+		&:hover {
+			background: $text;
+			color: $white;
+		}
+		&:active {
+			background: $white;
+			color: $text-08;
+			border-color: $text-08;
+		}
+	}
+	&.btn-white {
+		background: $white;
+		color: $accent;
+	}
+	&.btn-sm {
+		padding: 0.5rem 2.75rem;
+	}
+	&.btn-xs {
+		padding: em(0) em(57);
+	}
+	&.btn-fullwidth {
+		width: 100%;
+		padding-inline: 1rem;
+	}
+
+	&:disabled,
+	&[aria-disabled="true"] {
+		cursor: default;
+		opacity: 0.7;
+		pointer-events: none;
+	}
+}
+
+// .switcher {
+// 	// .switcher__input
+// 	&__input {
+// 		&:checked {
+// 			& + .switcher__btn {
+// 				&::before {
+// 					left: rem(2);
+// 				}
+// 				background: #81a6ca;
+// 			}
+// 		}
+// 	}
+// 	// .switcher__btn
+// 	&__btn {
+// 		position: relative;
+// 		width: rem(35);
+// 		height: rem(20);
+// 		border-radius: 6.25rem;
+// 		background: #81a6ca;
+// 		display: block;
+// 		cursor: pointer;
+// 		transition: background-color 0.3s ease 0s;
+// 		&::before {
+// 			content: "";
+// 			position: absolute;
+// 			top: rem(2);
+// 			left: rem(17);
+// 			width: rem(16);
+// 			transition: left 0.3s ease 0s;
+// 			border-radius: 50%;
+// 			background: #fff;
+// 			height: calc(100% - rem(4));
+// 		}
+// 	}
+// }
+
+.iti__selected-flag {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.select {
+	position: relative;
+	& select {
+		appearance: none;
+		background: transparent;
+		border: rem(1) solid $accent;
+		border-radius: rem(6);
+		color: $text;
+		font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+			"Segoe UI Symbol", "Noto Color Emoji";
+		display: block;
+		font-size: 1rem;
+		font-weight: 500;
+		height: 100%;
+		outline: none;
+		padding: 1em em(37) 1em em(23);
+		width: 100%;
+	}
+}

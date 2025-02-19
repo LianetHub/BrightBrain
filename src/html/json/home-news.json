@@ -1,0 +1,110 @@
+[
+    {
+        "className": "swiper-slide",
+        "image": "@img/products/04.webp",
+        "labels": [
+            {
+                "text": "Новинка",
+                "color": "primary"
+            }
+        ],
+        "title": "Доска сухая строганная с фаской 45х190х6000",
+        "variety": "1 сорт ГОСТ",
+        "material": "Сосна, ель",
+        "humidity": "10-14%",
+        "processing": "Камерная сушка",
+        "availability": true,
+        "price": "1 630 ₽",
+        "unit": "за шт"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/products/05.webp",
+        "labels": [
+            {
+                "text": "Новинка",
+                "color": "primary"
+            }
+        ],
+        "title": "Доска сухая строганная с фаской 45х140х6000",
+        "variety": "1 сорт ГОСТ",
+        "material": "Сосна, ель",
+        "humidity": "10-14%",
+        "processing": "Камерная сушка",
+        "availability": true,
+        "price": "1 200 ₽",
+        "unit": "за шт"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/products/06.webp",
+        "labels": [
+            {
+                "text": "Новинка",
+                "color": "primary"
+            }
+        ],
+        "title": "Клееный брус 190х190х9000",
+        "variety": "1 сорт ГОСТ",
+        "material": "Сосна, ель",
+        "humidity": "8-10%",
+        "processing": "Камерная сушка",
+        "availability": true,
+        "price": "59 000 ₽",
+        "unit": "за м³"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/products/01.webp",
+        "labels": [
+            {
+                "text": "Новинка",
+                "color": "primary"
+            }
+        ],
+        "title": "Клееный брус из лиственницы 190x190x9000",
+        "variety": "1 сорт ГОСТ",
+        "material": "Лиственница",
+        "humidity": "8-10%",
+        "processing": "Камерная сушка",
+        "availability": true,
+        "price": "59 000 ₽",
+        "unit": "за м³"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/products/02.webp",
+        "labels": [
+            {
+                "text": "Новинка",
+                "color": "primary"
+            }
+        ],
+        "title": "Клееный брус из лиственницы 90x90x6000",
+        "variety": "1 сорт ГОСТ",
+        "material": "Лиственница",
+        "humidity": "8-10%",
+        "processing": "Камерная сушка",
+        "availability": true,
+        "price": "52 000 ₽",
+        "unit": "за м³"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/products/03.webp",
+        "labels": [
+            {
+                "text": "Новинка",
+                "color": "primary"
+            }
+        ],
+        "title": "Доска сухая строганная с фаской 20х90х6000",
+        "variety": "1 сорт ГОСТ",
+        "material": "Лиственница",
+        "humidity": "8-10%",
+        "processing": "Камерная сушка",
+        "availability": true,
+        "price": "59 000 ₽",
+        "unit": "за м³"
+    }
+]

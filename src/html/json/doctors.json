@@ -1,0 +1,76 @@
+[
+    {
+        "className": " swiper-slide",
+        "image": "@img/doctors/zakharova-olga-pavlovna.jpg",
+        "expirience": "Стаж: Более 7 лет",
+        "name": "Захарова Ольга Павловна",
+        "position": "Врач-невролог",
+        "specializations": [
+            "ЗПР",
+            "Поражения экстрапирамидной системы",
+            "Наследственные заболевания нервной системы"
+        ]
+    },
+    {
+        "className": " swiper-slide",
+        "image": "@img/doctors/gnitiy-victoria-sergeevna.jpg",
+        "expirience": "Стаж: Более 3 лет",
+        "name": "Гнитий Виктория Сергеевна",
+        "position": "Врач-психиатр",
+        "specializations": [
+            "РПП",
+            "Эндогенные психические заболевания",
+            "Аффективные и невротические расстройства"
+        ]
+    },
+    {
+        "className": " swiper-slide",
+        "image": "@img/doctors/chomskaya-veronika-mikhailovna.jpg",
+        "expirience": "Стаж: Более 3 лет",
+        "name": "Чомская Вероника Михайловна",
+        "position": "Врач-психиатр",
+        "specializations": [
+            "Депрессия",
+            "Биполярное расстройство",
+            "Бессонница",
+            "Булимия"
+        ]
+    },
+    {
+        "className": " swiper-slide",
+        "image": "@img/doctors/zakharova-olga-pavlovna.jpg",
+        "expirience": "Стаж: Более 7 лет",
+        "name": "Захарова Ольга Павловна",
+        "position": "Врач-невролог",
+        "specializations": [
+            "ЗПР",
+            "Поражения экстрапирамидной системы",
+            "Наследственные заболевания нервной системы"
+        ]
+    },
+    {
+        "className": " swiper-slide",
+        "image": "@img/doctors/gnitiy-victoria-sergeevna.jpg",
+        "expirience": "Стаж: Более 3 лет",
+        "name": "Гнитий Виктория Сергеевна",
+        "position": "Врач-психиатр",
+        "specializations": [
+            "РПП",
+            "Эндогенные психические заболевания",
+            "Аффективные и невротические расстройства"
+        ]
+    },
+    {
+        "className": " swiper-slide",
+        "image": "@img/doctors/chomskaya-veronika-mikhailovna.jpg",
+        "expirience": "Стаж: Более 3 лет",
+        "name": "Чомская Вероника Михайловна",
+        "position": "Врач-психиатр",
+        "specializations": [
+            "Депрессия",
+            "Биполярное расстройство",
+            "Бессонница",
+            "Булимия"
+        ]
+    }
+]

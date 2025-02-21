@@ -1,13 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
     @@include('html/_head.html', {
-    'title': 'Bright Brain | Главная страница'
+    'title': 'Главная страница'
     })
     <body>
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
-
+                <section class="promo">
+                    <div class="promo__container">
+                        <div class="promo__body">
+                            <div class="promo__image">
+                                <img src="@img/team.jpg" class="cover-image" alt="Наша команда">
+                            </div>
+                            <div class="promo__offer">
+                                <div class="promo__tagline">Научный Подход к <br> психическому здоровью</div>
+                                <h1 class="promo__title title">
+                                    Клиника ментального здоровья <span class="color-accent">Bright Brain</span>
+                                </h1>
+                                <p class="promo__desc">Клиника ментального здоровья Bright Brain – это коллектив специалистов, использующих в своей работе только актуальные стандарты диагностики и лечения.</p>
+                                <a href="" class="promo__btn btn btn-primary">Подробнее о клинике</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="directions">
+                    <div class="directions__container">
+                        <h2 class="directions__title title">Направления работы</h2>
+                        <ul class="directions__list">
+                            <li class="directions__item">
+                                <div class="directions__item-header">
+                                    <div class="directions__item-icon">
+                                        <img src="@img/icons/psychiatry.svg" alt="Иконка">
+                                    </div>
+                                    <div class="directions__item-name">Психиатрия</div>
+                                </div>
+                                <div class="directions__item-body">
+                                    <p>Разработка лечебных мероприятий клиники ведется на базе передового научно-исследовательского центра.</p>
+                                    <ul>
+                                        <li>Лечение депрессии</li>
+                                        <li>Лечение тревожных расстройств</li>
+                                        <li>Помощь при панических атаках</li>
+                                        <li>Лечение шизофрении</li>
+                                        <li>Лечение биполярного расстройства</li>
+                                        <li>Лечение зависимостей (алкогольная, наркотическая, игровая)</li>
+                                        <li>Терапия при посттравматическом стрессовом расстройстве (ПТСР)</li>
+                                        <li>Консультация психиатра</li>
+                                        <li>Лечение обсессивно-компульсивного расстройства (ОКР)</li>
+                                        <li>Помощь при эмоциональном выгорании</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="directions__item">
+                                <div class="directions__item-header">
+                                    <div class="directions__item-icon">
+                                        <img src="@img/icons/neurology.svg" alt="Иконка">
+                                    </div>
+                                    <div class="directions__item-name">Неврология</div>
+                                </div>
+                                <div class="directions__item-body">
+                                    <p>Помощь при неврологических расстройствах у взрослых и детей, лечение широкого спектра патологий.</p>
+                                    <ul>
+                                        <li>Лечение мигрени и головных болей</li>
+                                        <li>Лечение нарушений сна (бессонница, апноэ)</li>
+                                        <li>Лечение вегетососудистой дистонии (ВСД)</li>
+                                        <li>Консультация невролога</li>
+                                        <li>Помощь при хронической усталости</li>
+                                        <li>Лечение нейропатий (например, полинейропатия)</li>
+                                        <li>Диагностика и лечение эпилепсии</li>
+                                        <li>Лечение последствий черепно-мозговых травм</li>
+                                        <li>Реабилитация после инсультов</li>
+                                        <li>Диагностика заболеваний центральной и периферической нервной системы</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="directions__item">
+                                <div class="directions__item-header">
+                                    <div class="directions__item-icon">
+                                        <img src="@img/icons/psychology.svg" alt="Иконка">
+                                    </div>
+                                    <div class="directions__item-name">Психология</div>
+                                </div>
+                                <div class="directions__item-body">
+                                    <p>Диагностика и лечение эпилепсии, помогая пациентам управлять своими симптомами и повышать качество жизни.</p>
+                                    <ul>
+                                        <li>Индивидуальная психологическая консультация</li>
+                                        <li>Семейная и парная терапия</li>
+                                        <li>Детская и подростковая психология</li>
+                                        <li>Помощь при низкой самооценке и проблемах с уверенностью</li>
+                                        <li>Коррекция эмоционального состояния (стресс, раздражительность, апатия)</li>
+                                        <li>Психологическая помощь при кризисах и утрате</li>
+                                        <li>Помощь в адаптации после стрессовых ситуаций</li>
+                                        <li>Работа с фобиями и страхами</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="" class="directions__btn btn btn-primary">Все услуги</a>
+                    </div>
+                </section>
+                <section class="benefits">
+                    <div class="benefits__container">
+                        <div class="benefits__body">
+                            <div class="benefits__main">
+                                <h2 class="benefits__title title">Помогаем справиться с тяжелыми психическими расстройствами и зависимостями</h2>
+                                <ul class="benefits__list">
+                                    <li class="benefits__item">
+                                        <h3 class="benefits__item-caption">Научный подход к лечению</h3>
+                                        <p class="benefits__item-desc">Применение актуальных стандартов диагностики и терапии, основанных на передовых научных исследованиях.</p>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <h3 class="benefits__item-caption">Индивидуальный подход</h3>
+                                        <p class="benefits__item-desc">Персонализированные планы лечения, учитывающие уникальные особенности и потребности каждого пациента.</p>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <h3 class="benefits__item-caption">Команда опытных специалистов</h3>
+                                        <p class="benefits__item-desc">Высококвалифицированные врачи с многолетним опытом работы в области психиатрии, неврологии и психологии.</p>
+                                    </li>
+                                    <li class="benefits__item">
+                                        <h3 class="benefits__item-caption">Положительные отзывы</h3>
+                                        <p class="benefits__item-desc">Многочисленные благодарные отзывы подтверждают эффективность наших методов и высокий уровень доверия</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="benefits__text">
+                                <p>Клиника ментального здоровья <span class="color-accent">Bright Brain</span> – это коллектив специалистов, использующих в своей работе только актуальные стандарты диагностики и лечения. Миссией Клиники является оказание качественной профессиональной персонализированной психиатрической помощи, основанной на гуманистическом подходе с ориентацией на удовлетворении запроса пациентов.</p>
+                                <p>Принимая во внимание лонгитудинальный характер течения психических расстройств и высокий риск обострений, кроме первичной диагностики и реализации терапевтического этапа медицинской помощи, Клиника производит комплексное психиатрическое и психотерапевтическое сопровождение клиентов (пациентов) на всех критических этапах их жизненного пути.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-doctor">
+                    <div class="main-doctor__container">
+                        <div class="main-doctor__body">
+                            <div class="main-doctor__main">
+                                <div class="main-doctor__position">Главный Врач Клиники</div>
+                                <h2 class="main-doctor__title title">Чомский Александр Николаевич</h2>
+                                <p class="main-doctor__desc">Чомский Александр Николаевич является известным клиническим психофармакологом и признанным экспертом в области психофармакотерапии психических расстройств.</p>
+                                <a href="" class="main-doctor__btn btn btn-primary">Подробнее о враче</a>
+                            </div>
+                            <div class="main-doctor__rate">
+                                <div class="main-doctor__rate-company">
+                                    <img src="@img/pro-doctorov.svg" alt="Лого Про Докторов">
+                                </div>
+                                <div class="main-doctor__rate-stars">
+                                    <span class="main-doctor__rate-star icon-star"></span><span class="main-doctor__rate-star icon-star"></span><span class="main-doctor__rate-star icon-star"></span><span class="main-doctor__rate-star icon-star"></span><span class="main-doctor__rate-star icon-star"></span>
+                                </div>
+                                <div class="main-doctor__rate-quantity">23 отзыва</div>
+                            </div>
+                            <div class="main-doctor__image">
+                                <img src="@img/head-doctor.png" alt="Фото главврача">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_doctors.html', {
+                "title": "Другие врачи клиники"
+                })
+                @@include('html/_reviews.html', {
+                "title": "Отзывы"
+                })
+                @@include('html/_contacts.html', {})
             </main>
             @@include('html/_footer.html', {})
             @@include('html/_modal.html', {})

@@ -1,0 +1,13 @@
+<section class="reviews">
+    <div class="reviews__container">
+        <h2 class="reviews__title title">@@title</h2>
+        <p class="reviews__subtitle">
+            Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл...
+        </p>
+        <div class="reviews__slider swiper">
+            <div class="swiper-wrapper">
+                @@loop('./templates/_review.html', './html/json/reviews.json')
+            </div>
+        </div>
+    </div>
+</section>

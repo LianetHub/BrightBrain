@@ -1,9 +1,67 @@
-<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_179_796" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
-<path d="M35 0H0V35H35V0Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_179_796)">
-<path d="M15.3122 24.7916C20.5474 24.7916 24.7913 20.5477 24.7913 15.3125C24.7913 10.0773 20.5474 5.83331 15.3122 5.83331C10.077 5.83331 5.83301 10.0773 5.83301 15.3125C5.83301 20.5477 10.077 24.7916 15.3122 24.7916Z" stroke="#145FFF" stroke-width="1.45833" stroke-linejoin="round"/>
-<path d="M28.651 29.6823C28.9359 29.967 29.3976 29.967 29.6824 29.6823C29.967 29.3975 29.967 28.9358 29.6824 28.651L28.651 29.6823ZM29.6824 28.651L22.3907 21.3593L21.3594 22.3906L28.651 29.6823L29.6824 28.651Z" fill="#145FFF"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="35"
+   height="35"
+   viewBox="0 0 35 35"
+   fill="none"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="search.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3">
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4">
+      <g
+         id="g5">
+        <path
+           d="M 35,0 H 0 v 35 h 35 z"
+           fill="#ffffff"
+           id="path4" />
+      </g>
+    </mask>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask5">
+      <g
+         id="g6">
+        <path
+           d="M 35,0 H 0 v 35 h 35 z"
+           fill="#ffffff"
+           id="path5" />
+      </g>
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="33.742857"
+     inkscape:cx="17.485182"
+     inkscape:cy="17.5"
+     inkscape:window-width="3440"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     style="color:#000000;fill:#145fff;stroke-linejoin:round;-inkscape-stroke:none"
+     d="m 15.3125,5.1035156 c -5.6292664,0 -10.2089844,4.579718 -10.2089844,10.2089844 0,5.629266 4.5797263,10.208984 10.2089844,10.208984 5.629258,0 10.207031,-4.579726 10.207031,-10.208984 0,-5.6292581 -4.577765,-10.2089844 -10.207031,-10.2089844 z m 0,1.4589844 c 4.841123,0 8.75,3.908869 8.75,8.75 0,4.841131 -3.908869,8.75 -8.75,8.75 -4.841131,0 -8.75,-3.908877 -8.75,-8.75 0,-4.841123 3.908877,-8.75 8.75,-8.75 z"
+     id="path2" />
+  <path
+     d="m 28.651,29.6823 c 0.2849,0.2847 0.7466,0.2847 1.0314,0 0.2846,-0.2848 0.2846,-0.7465 0,-1.0313 z m 1.0314,-1.0313 -7.2917,-7.2917 -1.0313,1.0313 7.2916,7.2917 z"
+     fill="#145fff"
+     id="path3"
+     mask="url(#mask4)" />
 </svg>

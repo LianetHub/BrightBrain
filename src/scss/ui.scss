@@ -1,103 +1,86 @@
-.color-accent {
-	color: $accent;
-}
-.color-secondary {
-	color: $secondary;
-}
-.color-grey {
-	color: $grey;
-}
+// .favorite-btn {
+// 	width: rem(30);
+// 	height: rem(30);
+// 	font-size: 1.25rem;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-shrink: 0;
+// 	background: #fff;
+// 	border-radius: 50%;
+// 	&::before {
+// 		@extend %ic, .icon-heart;
+// 		transition: all 0.3s ease 0s;
+// 	}
+// 	@media (any-hover: hover) {
+// 		&:hover {
+// 			color: $accent;
+// 		}
+// 	}
+// 	&.active {
+// 		&::before {
+// 			@extend %ic, .icon-heart-fill;
+// 			color: $accent;
+// 			animation: pulse 0.3s ease-in-out;
+// 			@keyframes pulse {
+// 				0% {
+// 					transform: scale(1);
+// 				}
+// 				50% {
+// 					transform: scale(1.4);
+// 				}
+// 				100% {
+// 					transform: scale(1);
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-.label {
-	border: rem(1) solid $brownDark;
-	color: $white;
-	background: $brownDark;
-	border-radius: 1rem;
-	font-size: 0.75rem;
-	letter-spacing: em(0.25, 14);
-	line-height: math.div(24, 12);
-	padding: 0 rem(14);
-}
+// .arrow-top-btn {
+// 	border-radius: rem(17);
+// 	bottom: 30%;
+// 	box-shadow: 0 rem(1) 1rem rgba(0, 0, 0, 0.13);
+// 	background: $white;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
 
-.favorite-btn {
-	width: rem(30);
-	height: rem(30);
-	font-size: 1.25rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-	background: #fff;
-	border-radius: 50%;
-	&::before {
-		@extend %ic, .icon-heart;
-		transition: all 0.3s ease 0s;
-	}
-	@media (any-hover: hover) {
-		&:hover {
-			color: $accent;
-		}
-	}
-	&.active {
-		&::before {
-			@extend %ic, .icon-heart-fill;
-			color: $accent;
-			animation: pulse 0.3s ease-in-out;
-			@keyframes pulse {
-				0% {
-					transform: scale(1);
-				}
-				50% {
-					transform: scale(1.4);
-				}
-				100% {
-					transform: scale(1);
-				}
-			}
-		}
-	}
-}
-
-.arrow-top-btn {
-	border-radius: rem(17);
-	bottom: 30%;
-	box-shadow: 0 rem(1) 1rem rgba(0, 0, 0, 0.13);
-	background: $white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	gap: 1rem;
-	padding: rem(6) rem(17) rem(10);
-	font-weight: 500;
-	position: fixed;
-	right: 0;
-	@media (min-width: $md4) {
-		right: 2%;
-	}
-	transform: rotate(90deg);
-	z-index: 99;
-	transition: background-color 0.3s ease, color 0.3s ease;
-	&::before {
-		margin-top: 0.35rem;
-	}
-	@media (any-hover: hover) {
-		&:hover {
-			background-color: $text;
-			color: $white;
-		}
-	}
-}
+// 	gap: 1rem;
+// 	padding: rem(6) rem(17) rem(10);
+// 	font-weight: 500;
+// 	position: fixed;
+// 	right: 0;
+// 	@media (min-width: $md4) {
+// 		right: 2%;
+// 	}
+// 	transform: rotate(90deg);
+// 	z-index: 99;
+// 	transition: background-color 0.3s ease, color 0.3s ease;
+// 	&::before {
+// 		margin-top: 0.35rem;
+// 	}
+// 	@media (any-hover: hover) {
+// 		&:hover {
+// 			background-color: $text;
+// 			color: $white;
+// 		}
+// 	}
+// }
 
 //============ МОДУЛИ ====================
 @import "modules/popup";
-@import "modules/breads";
+// @import "modules/breads";
 // @import "modules/breadcrumbs";
 // @import "modules/select";
 // @import "modules/pagination";
 // @import "modules/phone-input";
 
 //============ МОДУЛИ ====================
+
+.color-accent {
+	color: $accent;
+}
 
 // .fw-bold {
 // 	font-weight: 700;
@@ -357,7 +340,6 @@
 // Стилизация скролла
 
 $scrollbarColor: $accent;
-$scrollbarHover: $secondary;
 
 ::-webkit-scrollbar {
 	width: rem(8);
@@ -370,7 +352,7 @@ $scrollbarHover: $secondary;
 	border-radius: rem(8);
 	@media (any-hover: hover) {
 		&:hover {
-			background: $scrollbarHover;
+			background: darken($color: $accent, $amount: 10);
 		}
 	}
 }

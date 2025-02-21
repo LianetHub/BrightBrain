@@ -153,16 +153,6 @@
 			}
 		}
 	}
-	// .form__privacy
-	&__privacy {
-		color: #1b2b45;
-		font-size: rem(14);
-		font-weight: 300;
-		line-height: 1;
-		margin-top: em(18, 14);
-		opacity: 0.3;
-		text-align: center;
-	}
 }
 
 .btn {
@@ -174,13 +164,11 @@
 	text-align: center;
 	user-select: none;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-	border-radius: rem(6);
-	font-size: 1rem;
-	font-weight: 500;
-	line-height: math.div(24, 16);
-	padding: em(18.5) em(30);
-	gap: 0.5rem;
-	border: rem(1) solid;
+	border-radius: 0.625rem;
+	font-size: 1.125rem;
+	font-weight: 600;
+	padding: 1.06em 4.91em;
+
 	&::before {
 		order: 1;
 		font-size: 0.65em;
@@ -193,44 +181,28 @@
 		border-color: $accent;
 		color: $white;
 		&:hover {
-			background: $white;
-			border-color: $white;
-			color: $accent;
+			background: darken($color: $accent, $amount: 10);
+			border-color: darken($color: $accent, $amount: 10);
 		}
 		&:active {
-			background: $white;
-			border-color: $accent;
-			color: $accent;
+			background: darken($color: $accent, $amount: 20);
+			border-color: darken($color: $accent, $amount: 20);
 		}
 	}
 	&.btn-secondary {
-		background: $text;
-		border-color: $text;
+		background: $green;
+		border-color: $green;
 		color: $white;
 		&:hover {
-			background: $white;
-			color: $text;
+			background: darken($color: $green, $amount: 10);
+			border-color: darken($color: $green, $amount: 10);
 		}
 		&:active {
-			background: $white;
-			color: $text-08;
-			border-color: $text-08;
+			background: darken($color: $green, $amount: 20);
+			border-color: darken($color: $green, $amount: 20);
 		}
 	}
-	&.btn-secondary-outline {
-		background: $white;
-		border-color: $text;
-		color: $text;
-		&:hover {
-			background: $text;
-			color: $white;
-		}
-		&:active {
-			background: $white;
-			color: $text-08;
-			border-color: $text-08;
-		}
-	}
+
 	&.btn-white {
 		background: $white;
 		color: $accent;

@@ -1,0 +1,19 @@
+<div class="doctor@@className">
+    <a href="" class="doctor__image">
+        <img src="@@image" alt="Фото доктора">
+        <span class="doctor__label">@@expirience</span>
+    </a>
+    <div class="doctor__body">
+        <a href="" class="doctor__name">@@name</a>
+        <div class="doctor__position">@@position</div>
+        @@if(typeof specializations !== 'undefined' && specializations.length > 0) {
+        <div class="doctor__specialization">
+            <div class="doctor__specialization-title">Специализация:</div>
+            <div class="doctor__specialization-items">
+                @@for (var i = 0; i < specializations.length; i++) { <a href="" class="doctor__specialization-item">`+specializations[i]+`</a>}
+            </div>
+        </div>
+        }
+        <a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
+    </div>
+</div>

@@ -4,10 +4,16 @@
         <p class="reviews__subtitle">
             Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл...
         </p>
-        <div class="reviews__slider swiper">
-            <div class="swiper-wrapper">
-                @@loop('./templates/_review.html', './html/json/reviews.json')
+        <div class="reviews__slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    @@loop('./templates/_review.html', './html/json/reviews.json')
+                </div>
             </div>
+            <button type="button" class="reviews__next swiper-button-next"></button>
+            <button type="button" class="reviews__prev swiper-button-prev"></button>
+            <div class="reviews__pagination swiper-pagination"></div>
         </div>
+        <a href="" class="reviews__btn btn btn-primary btn-lg">Все отзывы</a>
     </div>
 </section>

@@ -37,12 +37,12 @@
 	<meta property="twitter:image:src" content="/OG.jpg">
 	<!-- Twitter -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250221130650">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250221130650">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250221130650">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250222130235">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250222130235">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250222130235">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250221130650">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250221130650">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250222130235">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250222130235">
 </head>
 
 <body>
@@ -51,9 +51,11 @@
 			<div class="header__container">
 				<div class="header__top">
 					<a href="/" class="header__logo">
-						<img src="img/logo.svg" alt="Логотип"> Клиника ментального здоровья </a>
-					<div class="header__contacts">
-						<a href="tel:+78126067796" class="header__contacts-phone icon-phone">+7 (812) 606-77-96</a>
+						<img src="img/logo.svg" alt="Логотип">
+						<span>Клиника ментального здоровья</span>
+					</a>
+					<div class="header__contacts icon-phone">
+						<a href="tel:+78126067796" class="header__contacts-phone">+7 (812) 606-77-96</a>
 						<p class="header__contacts-worktime">Ежедневно: 09-00 — 21:00</p>
 					</div>
 					<div class="header__address">
@@ -71,7 +73,7 @@
 						</div>
 					</div>
 					<div class="header__actions">
-						<div class="header__search">
+						<div class="header__search search">
 							<button type="button" aria-label="Открыть форму поиска" class="search__btn icon-search"></button>
 							<form action="#" class="search__form">
 								<input type="text" autocomplete="off" name="search" class="search__form-input form__input" placeholder="Введите запрос...">
@@ -89,7 +91,6 @@
 				<div class="header__menu menu">
 					<nav aria-label="Меню в шапке" class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Главная</a></li>
 							<li class="menu__item menu-parent">
 								<a href="" class="menu__link">Услуги</a>
 								<button type="button" class="menu__arrow icon-chevron"></button>
@@ -97,79 +98,45 @@
 									<div class="submenu__container">
 										<ul class="submenu__list">
 											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Вспомогательные репродуктивные технологии (ВРТ) </a>
+												<a href="" class="submenu__category-caption">Психиатрия</a>
 												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация репродуктолога</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Обследование перед ЭКО</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Программы ЭКО</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">ЭКО по ОМС</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">ИКСИ</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">ПИКСИ</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Вспомогательный хетчинг</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Искусственная инсеминация</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация психиатра</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение депрессии</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение тревожных расстройств</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь при панических атаках</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение шизофрении</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение биполярного расстройства</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение обсессивно-компульсивного расстройства (ОКР)</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Терапия при посттравматическом стрессовом расстройстве (ПТСР)</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение зависимостей (алкогольная, наркотическая, игровая)</a></li>
 												</ul>
 											</li>
 											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Акушерство и гинекология </a>
+												<a href="" class="submenu__category-caption">Неврология</a>
 												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация гинеколога</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Ведение беременности</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Гистероскопия</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Гинекологический чек-ап</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация невролога</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение мигрени и головных болей</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение нарушений сна (бессонница, апноэ)</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь при хронической усталости</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение нейропатий (например, полинейропатия)</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Диагностика и лечение эпилепсии</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение последствий черепно-мозговых травм</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Реабилитация после инсультов</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Диагностика заболеваний центральной и периферической нервной системы</a></li>
 												</ul>
 											</li>
 											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Урология и андрология </a>
+												<a href="" class="submenu__category-caption">Психология</a>
 												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация уролога-андролога</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Спермограмма</a></li>
-												</ul>
-											</li>
-											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Эндокринология </a>
-												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация эндокринолога</a></li>
-												</ul>
-											</li>
-											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Лечение бесплодия </a>
-												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение женского бесплодия</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение мужского бесплодия</a></li>
-												</ul>
-											</li>
-											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> УЗИ </a>
-												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">УЗИ Плода</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">УЗИ органов</a></li>
-												</ul>
-											</li>
-											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Генетика </a>
-												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Преимплантационная генетическая диагностика</a></li>
-												</ul>
-											</li>
-											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Эмбриология </a>
-												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация эмбриолога</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Криоконсервация спермы</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Криоконсервация эмбрионов</a></li>
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Криоконсервация ооцитов</a></li>
-												</ul>
-											</li>
-											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Терапия </a>
-												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация терапевта</a></li>
-												</ul>
-											</li>
-											<li class="submenu__category">
-												<a href="" class="submenu__category-caption"> Лабораторные исследования </a>
-												<ul class="submenu__category-list">
-													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лабораторные исследования</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Индивидуальная психологическая консультация</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Семейная и парная терапия</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Детская и подростковая психология</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь при низкой самооценке и проблемах с уверенностью</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Коррекция эмоционального состояния (стресс, раздражительность, апатия)</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Психологическая помощь при кризисах и утрате</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь в адаптации после стрессовых ситуаций</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Работа с фобиями и страхами</a></li>
+													<li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение вегетососудистой дистонии (ВСД)</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -178,10 +145,13 @@
 							</li>
 							<li class="menu__item"><a href="" class="menu__link">О клинике</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Специалисты</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Информация</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Стоимость</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Статьи</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
 						</ul>
 					</nav>
-					<a href="" class="menu__callback btn btn-primary">Запись на прием</a>
+					<a href="#callback" data-fancybox class="menu__callback btn btn-primary btn-lg">Запись на прием</a>
 				</div>
 			</div>
 		</header>
@@ -190,7 +160,7 @@
 				<div class="promo__container">
 					<div class="promo__body">
 						<div class="promo__image">
-							<img src="img/team.jpg" class="cover-image" alt="Наша команда">
+							<img src="img/team.jpg" alt="Наша команда">
 						</div>
 						<div class="promo__offer">
 							<div class="promo__tagline">Научный Подход к <br> психическому здоровью</div>
@@ -211,21 +181,21 @@
 								<div class="directions__item-icon">
 									<img src="img/icons/psychiatry.svg" alt="Иконка">
 								</div>
-								<div class="directions__item-name">Психиатрия</div>
+								<a href="" class="directions__item-name">Психиатрия</a>
 							</div>
 							<div class="directions__item-body">
 								<p>Разработка лечебных мероприятий клиники ведется на базе передового научно-исследовательского центра.</p>
 								<ul>
-									<li>Лечение депрессии</li>
-									<li>Лечение тревожных расстройств</li>
-									<li>Помощь при панических атаках</li>
-									<li>Лечение шизофрении</li>
-									<li>Лечение биполярного расстройства</li>
-									<li>Лечение зависимостей (алкогольная, наркотическая, игровая)</li>
-									<li>Терапия при посттравматическом стрессовом расстройстве (ПТСР)</li>
-									<li>Консультация психиатра</li>
-									<li>Лечение обсессивно-компульсивного расстройства (ОКР)</li>
-									<li>Помощь при эмоциональном выгорании</li>
+									<li><a href="">Лечение депрессии</a></li>
+									<li><a href="">Лечение тревожных расстройств</a></li>
+									<li><a href="">Помощь при панических атаках</a></li>
+									<li><a href="">Лечение шизофрении</a></li>
+									<li><a href="">Лечение биполярного расстройства</a></li>
+									<li><a href="">Лечение зависимостей (алкогольная, наркотическая, игровая)</a></li>
+									<li><a href="">Терапия при посттравматическом стрессовом расстройстве (ПТСР)</a></li>
+									<li><a href="">Консультация психиатра</a></li>
+									<li><a href="">Лечение обсессивно-компульсивного расстройства (ОКР)</a></li>
+									<li><a href="">Помощь при эмоциональном выгорании</a></li>
 								</ul>
 							</div>
 						</li>
@@ -234,21 +204,21 @@
 								<div class="directions__item-icon">
 									<img src="img/icons/neurology.svg" alt="Иконка">
 								</div>
-								<div class="directions__item-name">Неврология</div>
+								<a href="" class="directions__item-name">Неврология</a>
 							</div>
 							<div class="directions__item-body">
-								<p>Помощь при неврологических расстройствах у взрослых и детей, лечение широкого спектра патологий.</p>
+								<p>Помощь при неврологических расстройствах у&nbsp;взрослых и детей, лечение широкого спектра&nbsp;патологий.</p>
 								<ul>
-									<li>Лечение мигрени и головных болей</li>
-									<li>Лечение нарушений сна (бессонница, апноэ)</li>
-									<li>Лечение вегетососудистой дистонии (ВСД)</li>
-									<li>Консультация невролога</li>
-									<li>Помощь при хронической усталости</li>
-									<li>Лечение нейропатий (например, полинейропатия)</li>
-									<li>Диагностика и лечение эпилепсии</li>
-									<li>Лечение последствий черепно-мозговых травм</li>
-									<li>Реабилитация после инсультов</li>
-									<li>Диагностика заболеваний центральной и периферической нервной системы</li>
+									<li><a href="">Лечение мигрени и головных болей</a></li>
+									<li><a href="">Лечение нарушений сна (бессонница, апноэ)</a></li>
+									<li><a href="">Лечение вегетососудистой дистонии (ВСД)</a></li>
+									<li><a href="">Консультация невролога</a></li>
+									<li><a href="">Помощь при хронической усталости</a></li>
+									<li><a href="">Лечение нейропатий</a></li>
+									<li><a href="">Диагностика и лечение эпилепсии</a></li>
+									<li><a href="">Лечение последствий черепно-мозговых травм</a></li>
+									<li><a href="">Реабилитация после инсультов</a></li>
+									<li><a href="">Диагностика заболеваний центральной и периферической нервной системы</a></li>
 								</ul>
 							</div>
 						</li>
@@ -257,19 +227,19 @@
 								<div class="directions__item-icon">
 									<img src="img/icons/psychology.svg" alt="Иконка">
 								</div>
-								<div class="directions__item-name">Психология</div>
+								<a href="" class="directions__item-name">Психология</a>
 							</div>
 							<div class="directions__item-body">
 								<p>Диагностика и лечение эпилепсии, помогая пациентам управлять своими симптомами и повышать качество жизни.</p>
 								<ul>
-									<li>Индивидуальная психологическая консультация</li>
-									<li>Семейная и парная терапия</li>
-									<li>Детская и подростковая психология</li>
-									<li>Помощь при низкой самооценке и проблемах с уверенностью</li>
-									<li>Коррекция эмоционального состояния (стресс, раздражительность, апатия)</li>
-									<li>Психологическая помощь при кризисах и утрате</li>
-									<li>Помощь в адаптации после стрессовых ситуаций</li>
-									<li>Работа с фобиями и страхами</li>
+									<li><a href="">Индивидуальная психологическая <br> консультация</a></li>
+									<li><a href="">Семейная и парная терапия</a></li>
+									<li><a href="">Детская и подростковая психология</a></li>
+									<li><a href="">Помощь при низкой самооценке и проблемах с уверенностью</a></li>
+									<li><a href="">Коррекция эмоционального состояния</a></li>
+									<li><a href="">Психологическая помощь при кризисах и <br> утрате</a></li>
+									<li><a href="">Помощь в адаптации после стрессовых ситуаций</a></li>
+									<li><a href="">Работа с фобиями и страхами</a></li>
 								</ul>
 							</div>
 						</li>
@@ -315,7 +285,7 @@
 							<div class="main-doctor__position">Главный Врач Клиники</div>
 							<h2 class="main-doctor__title title">Чомский Александр Николаевич</h2>
 							<p class="main-doctor__desc">Чомский Александр Николаевич является известным клиническим психофармакологом и признанным экспертом в области психофармакотерапии психических расстройств.</p>
-							<a href="" class="main-doctor__btn btn btn-primary">Подробнее о враче</a>
+							<a href="" class="main-doctor__btn btn btn-primary btn-lg">Подробнее о враче</a>
 						</div>
 						<div class="main-doctor__rate">
 							<div class="main-doctor__rate-company">
@@ -335,113 +305,116 @@
 			<section class="doctors">
 				<div class="doctors__container">
 					<h2 class="doctors__title title">Другие врачи клиники</h2>
-					<div class="doctors__slider swiper">
-						<div class="swiper-wrapper">
-							<div class="doctor swiper-slide">
-								<a href="" class="doctor__image">
-									<img src="img/doctors/zakharova-olga-pavlovna.jpg" alt="Фото доктора">
-									<span class="doctor__label">Стаж: Более 7 лет</span>
-								</a>
-								<div class="doctor__body">
-									<a href="" class="doctor__name">Захарова Ольга Павловна</a>
-									<div class="doctor__position">Врач-невролог</div>
-									<div class="doctor__specialization">
-										<div class="doctor__specialization-title">Специализация:</div>
-										<div class="doctor__specialization-items">
-											<a href="" class="doctor__specialization-item">ЗПР</a> <a href="" class="doctor__specialization-item">Поражения экстрапирамидной системы</a> <a href="" class="doctor__specialization-item">Наследственные заболевания нервной системы</a>
+					<div class="doctors__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="doctor swiper-slide">
+									<a href="" class="doctor__image">
+										<img src="img/doctors/zakharova-olga-pavlovna.jpg" alt="Фото доктора">
+										<span class="doctor__label">Стаж: Более 7 лет</span>
+									</a>
+									<div class="doctor__body">
+										<a href="" class="doctor__name">Захарова Ольга Павловна</a>
+										<div class="doctor__position">Врач-невролог</div>
+										<div class="doctor__specialization">
+											<div class="doctor__specialization-title">Специализация:</div>
+											<div class="doctor__specialization-items">
+												<a href="" class="doctor__specialization-item">ЗПР</a> <a href="" class="doctor__specialization-item">Поражения экстрапирамидной системы</a> <a href="" class="doctor__specialization-item">Наследственные заболевания нервной системы</a>
+											</div>
 										</div>
+										<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 									</div>
-									<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 								</div>
-							</div>
-							<div class="doctor swiper-slide">
-								<a href="" class="doctor__image">
-									<img src="img/doctors/gnitiy-victoria-sergeevna.jpg" alt="Фото доктора">
-									<span class="doctor__label">Стаж: Более 3 лет</span>
-								</a>
-								<div class="doctor__body">
-									<a href="" class="doctor__name">Гнитий Виктория Сергеевна</a>
-									<div class="doctor__position">Врач-психиатр</div>
-									<div class="doctor__specialization">
-										<div class="doctor__specialization-title">Специализация:</div>
-										<div class="doctor__specialization-items">
-											<a href="" class="doctor__specialization-item">РПП</a> <a href="" class="doctor__specialization-item">Эндогенные психические заболевания</a> <a href="" class="doctor__specialization-item">Аффективные и невротические расстройства</a>
+								<div class="doctor swiper-slide">
+									<a href="" class="doctor__image">
+										<img src="img/doctors/gnitiy-victoria-sergeevna.jpg" alt="Фото доктора">
+										<span class="doctor__label">Стаж: Более 3 лет</span>
+									</a>
+									<div class="doctor__body">
+										<a href="" class="doctor__name">Гнитий Виктория Сергеевна</a>
+										<div class="doctor__position">Врач-психиатр</div>
+										<div class="doctor__specialization">
+											<div class="doctor__specialization-title">Специализация:</div>
+											<div class="doctor__specialization-items">
+												<a href="" class="doctor__specialization-item">РПП</a> <a href="" class="doctor__specialization-item">Эндогенные психические заболевания</a> <a href="" class="doctor__specialization-item">Аффективные и невротические расстройства</a>
+											</div>
 										</div>
+										<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 									</div>
-									<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 								</div>
-							</div>
-							<div class="doctor swiper-slide">
-								<a href="" class="doctor__image">
-									<img src="img/doctors/chomskaya-veronika-mikhailovna.jpg" alt="Фото доктора">
-									<span class="doctor__label">Стаж: Более 3 лет</span>
-								</a>
-								<div class="doctor__body">
-									<a href="" class="doctor__name">Чомская Вероника Михайловна</a>
-									<div class="doctor__position">Врач-психиатр</div>
-									<div class="doctor__specialization">
-										<div class="doctor__specialization-title">Специализация:</div>
-										<div class="doctor__specialization-items">
-											<a href="" class="doctor__specialization-item">Депрессия</a> <a href="" class="doctor__specialization-item">Биполярное расстройство</a> <a href="" class="doctor__specialization-item">Бессонница</a> <a href="" class="doctor__specialization-item">Булимия</a>
+								<div class="doctor swiper-slide">
+									<a href="" class="doctor__image">
+										<img src="img/doctors/chomskaya-veronika-mikhailovna.jpg" alt="Фото доктора">
+										<span class="doctor__label">Стаж: Более 3 лет</span>
+									</a>
+									<div class="doctor__body">
+										<a href="" class="doctor__name">Чомская Вероника Михайловна</a>
+										<div class="doctor__position">Врач-психиатр</div>
+										<div class="doctor__specialization">
+											<div class="doctor__specialization-title">Специализация:</div>
+											<div class="doctor__specialization-items">
+												<a href="" class="doctor__specialization-item">Депрессия</a> <a href="" class="doctor__specialization-item">Биполярное расстройство</a> <a href="" class="doctor__specialization-item">Бессонница</a> <a href="" class="doctor__specialization-item">Булимия</a>
+											</div>
 										</div>
+										<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 									</div>
-									<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 								</div>
-							</div>
-							<div class="doctor swiper-slide">
-								<a href="" class="doctor__image">
-									<img src="img/doctors/zakharova-olga-pavlovna.jpg" alt="Фото доктора">
-									<span class="doctor__label">Стаж: Более 7 лет</span>
-								</a>
-								<div class="doctor__body">
-									<a href="" class="doctor__name">Захарова Ольга Павловна</a>
-									<div class="doctor__position">Врач-невролог</div>
-									<div class="doctor__specialization">
-										<div class="doctor__specialization-title">Специализация:</div>
-										<div class="doctor__specialization-items">
-											<a href="" class="doctor__specialization-item">ЗПР</a> <a href="" class="doctor__specialization-item">Поражения экстрапирамидной системы</a> <a href="" class="doctor__specialization-item">Наследственные заболевания нервной системы</a>
+								<div class="doctor swiper-slide">
+									<a href="" class="doctor__image">
+										<img src="img/doctors/zakharova-olga-pavlovna.jpg" alt="Фото доктора">
+										<span class="doctor__label">Стаж: Более 7 лет</span>
+									</a>
+									<div class="doctor__body">
+										<a href="" class="doctor__name">Захарова Ольга Павловна</a>
+										<div class="doctor__position">Врач-невролог</div>
+										<div class="doctor__specialization">
+											<div class="doctor__specialization-title">Специализация:</div>
+											<div class="doctor__specialization-items">
+												<a href="" class="doctor__specialization-item">ЗПР</a> <a href="" class="doctor__specialization-item">Поражения экстрапирамидной системы</a> <a href="" class="doctor__specialization-item">Наследственные заболевания нервной системы</a>
+											</div>
 										</div>
+										<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 									</div>
-									<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 								</div>
-							</div>
-							<div class="doctor swiper-slide">
-								<a href="" class="doctor__image">
-									<img src="img/doctors/gnitiy-victoria-sergeevna.jpg" alt="Фото доктора">
-									<span class="doctor__label">Стаж: Более 3 лет</span>
-								</a>
-								<div class="doctor__body">
-									<a href="" class="doctor__name">Гнитий Виктория Сергеевна</a>
-									<div class="doctor__position">Врач-психиатр</div>
-									<div class="doctor__specialization">
-										<div class="doctor__specialization-title">Специализация:</div>
-										<div class="doctor__specialization-items">
-											<a href="" class="doctor__specialization-item">РПП</a> <a href="" class="doctor__specialization-item">Эндогенные психические заболевания</a> <a href="" class="doctor__specialization-item">Аффективные и невротические расстройства</a>
+								<div class="doctor swiper-slide">
+									<a href="" class="doctor__image">
+										<img src="img/doctors/gnitiy-victoria-sergeevna.jpg" alt="Фото доктора">
+										<span class="doctor__label">Стаж: Более 3 лет</span>
+									</a>
+									<div class="doctor__body">
+										<a href="" class="doctor__name">Гнитий Виктория Сергеевна</a>
+										<div class="doctor__position">Врач-психиатр</div>
+										<div class="doctor__specialization">
+											<div class="doctor__specialization-title">Специализация:</div>
+											<div class="doctor__specialization-items">
+												<a href="" class="doctor__specialization-item">РПП</a> <a href="" class="doctor__specialization-item">Эндогенные психические заболевания</a> <a href="" class="doctor__specialization-item">Аффективные и невротические расстройства</a>
+											</div>
 										</div>
+										<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 									</div>
-									<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 								</div>
-							</div>
-							<div class="doctor swiper-slide">
-								<a href="" class="doctor__image">
-									<img src="img/doctors/chomskaya-veronika-mikhailovna.jpg" alt="Фото доктора">
-									<span class="doctor__label">Стаж: Более 3 лет</span>
-								</a>
-								<div class="doctor__body">
-									<a href="" class="doctor__name">Чомская Вероника Михайловна</a>
-									<div class="doctor__position">Врач-психиатр</div>
-									<div class="doctor__specialization">
-										<div class="doctor__specialization-title">Специализация:</div>
-										<div class="doctor__specialization-items">
-											<a href="" class="doctor__specialization-item">Депрессия</a> <a href="" class="doctor__specialization-item">Биполярное расстройство</a> <a href="" class="doctor__specialization-item">Бессонница</a> <a href="" class="doctor__specialization-item">Булимия</a>
+								<div class="doctor swiper-slide">
+									<a href="" class="doctor__image">
+										<img src="img/doctors/chomskaya-veronika-mikhailovna.jpg" alt="Фото доктора">
+										<span class="doctor__label">Стаж: Более 3 лет</span>
+									</a>
+									<div class="doctor__body">
+										<a href="" class="doctor__name">Чомская Вероника Михайловна</a>
+										<div class="doctor__position">Врач-психиатр</div>
+										<div class="doctor__specialization">
+											<div class="doctor__specialization-title">Специализация:</div>
+											<div class="doctor__specialization-items">
+												<a href="" class="doctor__specialization-item">Депрессия</a> <a href="" class="doctor__specialization-item">Биполярное расстройство</a> <a href="" class="doctor__specialization-item">Бессонница</a> <a href="" class="doctor__specialization-item">Булимия</a>
+											</div>
 										</div>
+										<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 									</div>
-									<a href="" class="doctor__btn btn btn-primary btn-fullwidth">Подробнее о враче</a>
 								</div>
 							</div>
 						</div>
 						<button type="button" class="doctors__next swiper-button-next"></button>
 						<button type="button" class="doctors__prev swiper-button-prev"></button>
+						<div class="doctors__pagination swiper-pagination"></div>
 					</div>
 				</div>
 			</section>
@@ -449,48 +422,125 @@
 				<div class="reviews__container">
 					<h2 class="reviews__title title">Отзывы</h2>
 					<p class="reviews__subtitle"> Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл... </p>
-					<div class="reviews__slider swiper">
-						<div class="swiper-wrapper">
-							<div class="review swiper-slide">
-								<div class="review__header">
-									<a href="" class="review__thumb">
-										<img src="img/doctors/zakharova-olga-pavlovna.jpg" alt="Миниатюра доктора">
-									</a>
-									<div class="review__person">
-										<div class="review__person-caption">Отзыв о враче:</div>
-										<a href="" class="review__person-name">Захарова Ольга Павловна</a>
+					<div class="reviews__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="review swiper-slide">
+									<div class="review__header">
+										<a href="" class="review__thumb">
+											<img src="img/doctors/zakharova-olga-pavlovna.jpg" class="cover-image" alt="Миниатюра доктора">
+										</a>
+										<div class="review__person">
+											<div class="review__person-caption">Отзыв о враче:</div>
+											<a href="" class="review__person-name">Захарова Ольга Павловна</a>
+										</div>
+										<div class="review__company">
+											<img src="img/icons/2gis.svg" alt="Фото компании">
+										</div>
 									</div>
-									<div class="review__company">
-										<img src="img/icons/2gis.svg" alt="Фото компании">
+									<div class="review__rate">
+										<span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span>
+									</div>
+									<blockquote class="review__quote">Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл</blockquote>
+									<a href="" class="review__more">Читать полностью...</a>
+									<div class="review__footer">
+										<div class="review__email">503....@....com</div>
+										<time datetime="2024-03-05" class="review__time icon-calendar">05.03.2024</time>
 									</div>
 								</div>
-								<blockquote class="review__quote">Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл</blockquote>
-								<a href="" class="review__more">Читать полностью...</a>
-								<div class="review__footer">
-									<div class="review__email">503....@....com</div>
-									<time datetime="2024-03-05" class="review__time">05.03.2024</time>
+								<div class="review swiper-slide">
+									<div class="review__header">
+										<a href="" class="review__thumb">
+											<img src="img/doctors/chomskaya-veronika-mikhailovna.jpg" class="cover-image" alt="Миниатюра доктора">
+										</a>
+										<div class="review__person">
+											<div class="review__person-caption">Отзыв о враче:</div>
+											<a href="" class="review__person-name">Чомский Александр Николаевич</a>
+										</div>
+										<div class="review__company">
+											<img src="img/icons/yandex.svg" alt="Фото компании">
+										</div>
+									</div>
+									<div class="review__rate">
+										<span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span>
+									</div>
+									<blockquote class="review__quote">Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл</blockquote>
+									<a href="" class="review__more">Читать полностью...</a>
+									<div class="review__footer">
+										<div class="review__email">503....@....com</div>
+										<time datetime="2024-03-05" class="review__time icon-calendar">05.03.2024</time>
+									</div>
+								</div>
+								<div class="review swiper-slide">
+									<div class="review__header">
+										<a href="" class="review__thumb">
+											<img src="img/doctors/zakharova-olga-pavlovna.jpg" class="cover-image" alt="Миниатюра доктора">
+										</a>
+										<div class="review__person">
+											<div class="review__person-caption">Отзыв о враче:</div>
+											<a href="" class="review__person-name">Захарова Ольга Павловна</a>
+										</div>
+										<div class="review__company">
+											<img src="img/icons/2gis.svg" alt="Фото компании">
+										</div>
+									</div>
+									<div class="review__rate">
+										<span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span>
+									</div>
+									<blockquote class="review__quote">Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл</blockquote>
+									<a href="" class="review__more">Читать полностью...</a>
+									<div class="review__footer">
+										<div class="review__email">503....@....com</div>
+										<time datetime="2024-03-05" class="review__time icon-calendar">05.03.2024</time>
+									</div>
+								</div>
+								<div class="review swiper-slide">
+									<div class="review__header">
+										<a href="" class="review__thumb">
+											<img src="img/doctors/chomskaya-veronika-mikhailovna.jpg" class="cover-image" alt="Миниатюра доктора">
+										</a>
+										<div class="review__person">
+											<div class="review__person-caption">Отзыв о враче:</div>
+											<a href="" class="review__person-name">Чомский Александр Николаевич</a>
+										</div>
+										<div class="review__company">
+											<img src="img/icons/yandex.svg" alt="Фото компании">
+										</div>
+									</div>
+									<div class="review__rate">
+										<span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span><span class="review__rate-item icon-star"></span>
+									</div>
+									<blockquote class="review__quote">Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл</blockquote>
+									<a href="" class="review__more">Читать полностью...</a>
+									<div class="review__footer">
+										<div class="review__email">503....@....com</div>
+										<time datetime="2024-03-05" class="review__time icon-calendar">05.03.2024</time>
+									</div>
 								</div>
 							</div>
-							<div class="review swiper-slide">
-								<div class="review__header">
-									<a href="" class="review__thumb">
-										<img src="img/doctors/zakharova-olga-pavlovna.jpg" alt="Миниатюра доктора">
-									</a>
-									<div class="review__person">
-										<div class="review__person-caption">Отзыв о враче:</div>
-										<a href="" class="review__person-name">Захарова Ольга Павловна</a>
-									</div>
-									<div class="review__company">
-										<img src="img/icons/yandex.svg" alt="Фото компании">
-									</div>
-								</div>
-								<blockquote class="review__quote">Четыре года выматывающей депрессии. Спасибо Александру Николаевичу. Выслушал, понял, посоветовал. Вот уже четвертый месяц, как я радуюсь каждому прожитому дню и почти забыл</blockquote>
-								<a href="" class="review__more">Читать полностью...</a>
-								<div class="review__footer">
-									<div class="review__email">503....@....com</div>
-									<time datetime="2024-03-05" class="review__time">05.03.2024</time>
-								</div>
+						</div>
+						<button type="button" class="reviews__next swiper-button-next"></button>
+						<button type="button" class="reviews__prev swiper-button-prev"></button>
+						<div class="reviews__pagination swiper-pagination"></div>
+					</div>
+					<a href="" class="reviews__btn btn btn-primary btn-lg">Все отзывы</a>
+				</div>
+			</section>
+			<section class="callback">
+				<div class="callback__container">
+					<div class="callback__banner">
+						<div class="callback__main">
+							<div class="callback__offer">
+								<h2 class="callback__title title"> Напишите нам </h2>
+								<p class="callback__desc">Наш администратор ответит и расскажет о направлениях работы, специалистах и поможет решить вашу проблему.</p>
 							</div>
+							<div class="callback__btns">
+								<a href="" class="callback__btn btn btn-secondary icon-whatsapp"><span>Написать нам в</span> WhatsApp</a>
+								<a href="" class="callback__btn btn btn-primary icon-telegram"><span>Написать нам в</span> Telegram</a>
+							</div>
+						</div>
+						<div class="callback__image">
+							<img src="img/hand.png" alt="Фото руки с телефоном">
 						</div>
 					</div>
 				</div>
@@ -518,7 +568,7 @@
 							<a href="img/place.jpg" data-fancybox class="contacts__image">
 								<img src="img/place.jpg" alt="Фото компании">
 							</a>
-							<iframe src="https://yandex.ru/map-widget/v1/?ll=30.296025%2C59.954777&mode=search&oid=231815069817&ol=biz&z=17.11" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb339e48cef79f8660ccfa5222c89f796a261f4c24d758df0996f4af09ac3abe&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 						</div>
 					</div>
 				</div>
@@ -570,12 +620,11 @@
 		</footer>
 		<div id="callback" class="popup">
 			<button type="button" data-fancybox-close class="popup__close icon-close"></button>
-			<h2 class="popup__title">Заказать звонок</h2>
-			<p class="popup__subtitle">Мы перезвоним Вам в ближайшее время!</p>
+			<h2 class="popup__title title">Запиcаться на прием</h2>
 			<form action="#" class="popup__form form">
 				<div class="form__field">
-					<label for="callback-name">Имя</label>
-					<input type="text" name="name" id="callback-name" class="form__control" placeholder="Ваше имя">
+					<label for="callback-name">Ваше имя</label>
+					<input type="text" name="name" id="callback-name" class="form__control" placeholder="Введите имя">
 				</div>
 				<div class="form__field">
 					<label for="callback-phone">Телефон</label>
@@ -587,45 +636,21 @@
 				</div>
 				<label class="form__checkbox">
 					<input type="checkbox" name="not-call" class="form__checkbox-input hidden" hidden>
-					<span class="form__checkbox-text">Не звоните, напишите в Whatsapp</span>
+					<span class="form__checkbox-text">Нажимая на кнопку, вы даете согласие на обработку <a href="">персональных данных</a></span>
 				</label>
 				<div class="form__footer">
-					<button type="submit" class="form__btn btn btn-primary btn-sm icon-phone">Отправить заявку</button>
+					<button type="submit" class="form__btn btn btn-primary btn-lg icon-phone">Отправить заявку</button>
 					<div class="form__socials">
 						<a href="" class="form__social icon-whatsapp"></a>
 						<a href="" class="form__social icon-telegram"></a>
 					</div>
 				</div>
 			</form>
-			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
-		</div>
-		<div id="one-click-buy" class="popup">
-			<button type="button" data-fancybox-close class="popup__close icon-close"></button>
-			<h2 class="popup__title">Купить в 1 клик</h2>
-			<p class="popup__subtitle">Мы перезвоним Вам в ближайшее время!</p>
-			<form action="#" class="popup__form form">
-				<div class="form__field">
-					<label for="callback-name">Имя</label>
-					<input type="text" name="name" id="callback-name" class="form__control" placeholder="Ваше имя">
-				</div>
-				<div class="form__field">
-					<label for="callback-phone">Телефон</label>
-					<input type="tel" name="phone" id="callback-phone" class="form__control" placeholder="+7 ___ ___-__-__">
-				</div>
-				<div class="form__footer">
-					<button type="submit" class="form__btn btn btn-secondary btn-sm icon-phone">Оформить заказ</button>
-					<div class="form__socials">
-						<a href="" class="form__social icon-whatsapp"></a>
-						<a href="" class="form__social icon-telegram"></a>
-					</div>
-				</div>
-			</form>
-			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/fancybox.umd.js?_v=20250221130650"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250221130650"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250222130235"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250222130235"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250221130650"></script>
+		<script src="js/app.min.js?_v=20250222130235"></script>
 	</div>
 </body>
 

@@ -39,6 +39,7 @@ body {
 	max-width: 100%;
 	padding: 0 rem(12);
 	@media (min-width: $md5) {
+		box-sizing: content-box;
 		max-width: rem(540);
 	}
 	@media (min-width: $md4) {
@@ -59,8 +60,11 @@ body {
 
 .title {
 	font-family: $font-gilroy;
-	font-size: 2.25rem;
 	font-weight: 500;
+	font-size: 1.75rem;
+	@media (min-width: $md4) {
+		font-size: 2.25rem;
+	}
 }
 
 // .quantity-block {
@@ -127,13 +131,11 @@ body {
 	&::after {
 		display: none;
 	}
-
 	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 	z-index: 2;
-	width: 2.25rem;
-	height: 2.25rem;
-	font-size: 0.75rem;
-	border-radius: rem(4);
+	width: 2.875rem;
+	height: 2.875rem;
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -143,9 +145,10 @@ body {
 	&:disabled,
 	&.swiper-button-disabled,
 	&[aria-disabled="true"] {
-		background: $white;
-		color: $text;
+		background: #d7e4ff;
+		color: #fff;
 		pointer-events: none;
+		opacity: 1;
 	}
 	&.swiper-button-lock {
 		display: none;
@@ -161,12 +164,27 @@ body {
 
 .swiper-button-prev {
 	@extend %ic, .icon-left;
+	@media (min-width: $md5) {
+		left: auto;
+		right: calc(100% - 1.5rem);
+	}
+	@media (min-width: $md2) {
+		right: calc(100% + 1.19rem);
+	}
 }
 .swiper-button-next {
 	@extend %ic, .icon-right;
+	@media (min-width: $md5) {
+		right: auto;
+		left: calc(100% - 1.5rem);
+	}
+	@media (min-width: $md2) {
+		left: calc(100% + 1.19rem);
+	}
 }
 
 .swiper-pagination {
+	margin-top: 2rem;
 	position: static;
 	bottom: auto;
 
@@ -177,8 +195,8 @@ body {
 	}
 	.swiper-pagination-bullet {
 		position: relative;
-		width: 0.5rem;
-		height: 0.5rem;
+		width: 0.75rem;
+		height: 0.75rem;
 		--swiper-pagination-bullet-horizontal-gap: #{rem(6)};
 		background: #d9d9d9;
 		opacity: 1;

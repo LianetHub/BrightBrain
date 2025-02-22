@@ -101,9 +101,19 @@
 			justify-content: center;
 			align-items: center;
 		}
+		& a {
+			text-decoration: underline;
+			white-space: nowrap;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 	&__footer {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 1rem;
@@ -147,9 +157,10 @@
 	&__btn {
 		&.btn {
 			padding: 1rem 3rem;
+			gap: 1rem;
 			&::before {
 				order: -1;
-				font-size: 1rem;
+				font-size: 1.5rem;
 			}
 		}
 	}
@@ -164,15 +175,12 @@
 	text-align: center;
 	user-select: none;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+	font-family: $font-proxima;
 	border-radius: 0.625rem;
 	font-size: 1.125rem;
 	font-weight: 600;
-	padding: 1.06em 4.91em;
+	padding: 0.875rem 2.5rem;
 
-	&::before {
-		order: 1;
-		font-size: 0.65em;
-	}
 	&:focus-visible {
 		box-shadow: 0 0 rem(1) rem(1) $text;
 	}
@@ -210,8 +218,11 @@
 	&.btn-sm {
 		padding: 0.5rem 2.75rem;
 	}
-	&.btn-xs {
-		padding: em(0) em(57);
+	&.btn-lg {
+		padding-block: 1.06rem;
+		@media (min-width: $md3) {
+			font-size: 1.25rem;
+		}
 	}
 	&.btn-fullwidth {
 		width: 100%;

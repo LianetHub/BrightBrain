@@ -3,10 +3,10 @@
         <div class="header__top">
             <a href="/" class="header__logo">
                 <img src="@img/logo.svg" alt="Логотип">
-                Клиника ментального здоровья
+                <span>Клиника ментального здоровья</span>
             </a>
-            <div class="header__contacts">
-                <a href="tel:+78126067796" class="header__contacts-phone icon-phone">+7 (812) 606-77-96</a>
+            <div class="header__contacts icon-phone">
+                <a href="tel:+78126067796" class="header__contacts-phone">+7 (812) 606-77-96</a>
                 <p class="header__contacts-worktime">Ежедневно: 09-00 — 21:00</p>
             </div>
             <div class="header__address">
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="header__actions">
-                <div class="header__search">
+                <div class="header__search search">
                     <button type="button" aria-label="Открыть форму поиска" class="search__btn icon-search"></button>
                     <form action="#" class="search__form">
                         <input type="text" autocomplete="off" name="search" class="search__form-input form__input" placeholder="Введите запрос...">
@@ -44,7 +44,6 @@
         <div class="header__menu menu">
             <nav aria-label="Меню в шапке" class="menu__body">
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
                     <li class="menu__item menu-parent">
                         <a href="" class="menu__link">Услуги</a>
                         <button type="button" class="menu__arrow icon-chevron"></button>
@@ -52,99 +51,45 @@
                             <div class="submenu__container">
                                 <ul class="submenu__list">
                                     <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Вспомогательные репродуктивные технологии (ВРТ)
-                                        </a>
+                                        <a href="" class="submenu__category-caption">Психиатрия</a>
                                         <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация репродуктолога</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Обследование перед ЭКО</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Программы ЭКО</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">ЭКО по ОМС</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">ИКСИ</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">ПИКСИ</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Вспомогательный хетчинг</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Искусственная инсеминация</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация психиатра</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение депрессии</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение тревожных расстройств</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь при панических атаках</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение шизофрении</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение биполярного расстройства</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение обсессивно-компульсивного расстройства (ОКР)</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Терапия при посттравматическом стрессовом расстройстве (ПТСР)</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение зависимостей (алкогольная, наркотическая, игровая)</a></li>
                                         </ul>
                                     </li>
                                     <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Акушерство и гинекология
-                                        </a>
+                                        <a href="" class="submenu__category-caption">Неврология</a>
                                         <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация гинеколога</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Ведение беременности</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Гистероскопия</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Гинекологический чек-ап</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация невролога</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение мигрени и головных болей</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение нарушений сна (бессонница, апноэ)</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь при хронической усталости</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение нейропатий (например, полинейропатия)</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Диагностика и лечение эпилепсии</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение последствий черепно-мозговых травм</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Реабилитация после инсультов</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Диагностика заболеваний центральной и периферической нервной системы</a></li>
                                         </ul>
                                     </li>
                                     <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Урология и андрология
-                                        </a>
+                                        <a href="" class="submenu__category-caption">Психология</a>
                                         <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация уролога-андролога</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Спермограмма</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Эндокринология
-                                        </a>
-                                        <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация эндокринолога</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Лечение бесплодия
-                                        </a>
-                                        <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение женского бесплодия</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение мужского бесплодия</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            УЗИ
-                                        </a>
-                                        <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">УЗИ Плода</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">УЗИ органов</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Генетика
-                                        </a>
-                                        <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Преимплантационная генетическая диагностика</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Эмбриология
-                                        </a>
-                                        <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация эмбриолога</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Криоконсервация спермы</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Криоконсервация эмбрионов</a></li>
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Криоконсервация ооцитов</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Терапия
-                                        </a>
-                                        <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Консультация терапевта</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu__category">
-                                        <a href="" class="submenu__category-caption">
-                                            Лабораторные исследования
-                                        </a>
-                                        <ul class="submenu__category-list">
-                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лабораторные исследования</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Индивидуальная психологическая консультация</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Семейная и парная терапия</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Детская и подростковая психология</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь при низкой самооценке и проблемах с уверенностью</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Коррекция эмоционального состояния (стресс, раздражительность, апатия)</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Психологическая помощь при кризисах и утрате</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Помощь в адаптации после стрессовых ситуаций</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Работа с фобиями и страхами</a></li>
+                                            <li class="submenu__category-item"><a href="" class="submenu__category-link">Лечение вегетососудистой дистонии (ВСД)</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -153,10 +98,13 @@
                     </li>
                     <li class="menu__item"><a href="" class="menu__link">О клинике</a></li>
                     <li class="menu__item"><a href="" class="menu__link">Специалисты</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Информация</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Стоимость</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Статьи</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
                 </ul>
             </nav>
-            <a href="" class="menu__callback btn btn-primary">Запись на прием</a>
+            <a href="#callback" data-fancybox class="menu__callback btn btn-primary btn-lg">Запись на прием</a>
         </div>
     </div>
 </header>

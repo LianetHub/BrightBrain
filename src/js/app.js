@@ -261,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+
     // click handlers
 
     document.addEventListener('click', (e) => {
@@ -359,57 +360,56 @@ document.addEventListener("DOMContentLoaded", () => {
     // sliders
 
     if (document.querySelector('.doctors__slider')) {
-        new Swiper('.doctors__slider', {
-            slidesPerView: 3,
-            spaceBetween: 22,
+        new Swiper('.doctors__slider .swiper', {
+            spaceBetween: 15,
+            slidesPerView: 1,
             navigation: {
                 nextEl: ".doctors__next",
                 prevEl: ".doctors__prev"
             },
-
-        })
-    }
-
-
-    if (document.querySelector('.doctors__slider')) {
-        new Swiper('.doctors__slider .swiper', {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: ".doctors__next",
-                prevEl: ".doctors__prev"
+            pagination: {
+                el: '.doctors__pagination',
+                clickable: true
             },
             breakpoints: {
-                576.98: {
+                575.98: {
                     slidesPerView: 2,
+                    spaceBetween: 22,
                 },
                 991.98: {
                     slidesPerView: 3,
-                },
-                1399.98: {
-                    slidesPerView: 4,
+                    spaceBetween: 22,
                 }
             }
         })
     }
 
-
     if (document.querySelector('.reviews__slider')) {
         new Swiper('.reviews__slider .swiper', {
+            slidesPerView: 1,
+            spaceBetween: 15,
             navigation: {
                 nextEl: ".reviews__next",
                 prevEl: ".reviews__prev"
             },
-
-            spaceBetween: 20,
+            pagination: {
+                el: '.reviews__pagination',
+                clickable: true
+            },
             breakpoints: {
+                575.98: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
                 991.98: {
                     slidesPerView: 2,
+                    spaceBetween: 20,
                 }
             }
 
         })
     }
+
 
 
 });

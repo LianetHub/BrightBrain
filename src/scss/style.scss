@@ -13,11 +13,12 @@
 // Шрифт по умолчанию
 $fontfamily: "Onest";
 $font-gilroy: "Gilroy";
+$font-proxima: "Proxima";
 // Шрифт по умолчанию
 
 $md0: 1599.98px;
-$md1: 1399.98px;
-$md2: 1199.98px;
+$md1: 1419.98px;
+$md2: 1279.98px;
 $md3: 991.98px;
 $md4: 767.98px;
 $md5: 575.98px;
@@ -39,7 +40,7 @@ $accent: #0739a6;
 $green: #01ce22;
 $red: #fa0644;
 
-$shadow: 0 rem(4) rem(32) 3px rgba(7, 57, 166, 0.02);
+$shadow: 0 rem(4) rem(32) rem(3) rgba(7, 57, 166, 0.02);
 
 // Z-Index
 

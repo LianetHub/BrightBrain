@@ -1,12 +1,15 @@
 <section class="doctors">
     <div class="doctors__container">
         <h2 class="doctors__title title">@@title</h2>
-        <div class="doctors__slider swiper">
-            <div class="swiper-wrapper">
-                @@loop('./templates/_doctor.html', './html/json/doctors.json')
+        <div class="doctors__slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    @@loop('./templates/_doctor.html', './html/json/doctors.json')
+                </div>
             </div>
             <button type="button" class="doctors__next swiper-button-next"></button>
             <button type="button" class="doctors__prev swiper-button-prev"></button>
+            <div class="doctors__pagination swiper-pagination"></div>
         </div>
     </div>
 </section>

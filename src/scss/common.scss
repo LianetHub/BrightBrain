@@ -7,7 +7,7 @@ body {
 	color: $text;
 	background-color: #f8f9fc;
 	margin-right: 0 !important;
-	&:has(.menu.active) {
+	&:has(.header.open-menu) {
 		@media (max-width: $md3) {
 			overflow: hidden;
 		}
@@ -64,6 +64,15 @@ body {
 	font-size: 1.75rem;
 	@media (min-width: $md4) {
 		font-size: 2.25rem;
+	}
+}
+
+.title-lg {
+	font-family: $font-gilroy;
+	font-weight: 500;
+	font-size: 2rem;
+	@media (min-width: $md4) {
+		font-size: 2.625rem;
 	}
 }
 

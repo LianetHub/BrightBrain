@@ -197,6 +197,20 @@
 			border-color: darken($color: $accent, $amount: 20);
 		}
 	}
+	&.btn-primary-outline {
+		background: transparent;
+		border: rem(1) solid $accent;
+		color: $accent;
+		&:hover {
+			background: $accent;
+			border-color: $accent;
+			color: $white;
+		}
+		&:active {
+			background: darken($color: $accent, $amount: 10);
+			border-color: darken($color: $accent, $amount: 10);
+		}
+	}
 	&.btn-secondary {
 		background: $green;
 		border-color: $green;

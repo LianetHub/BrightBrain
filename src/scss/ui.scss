@@ -70,16 +70,16 @@
 
 //============ МОДУЛИ ====================
 @import "modules/popup";
-// @import "modules/breads";
-// @import "modules/breadcrumbs";
-// @import "modules/select";
-// @import "modules/pagination";
-// @import "modules/phone-input";
+@import "modules/breadcrumbs";
 
 //============ МОДУЛИ ====================
 
 .color-accent {
 	color: $accent;
+}
+
+.fw-medium {
+	font-weight: 500;
 }
 
 // .fw-bold {

@@ -1,5 +1,8 @@
 .promo {
-	padding: 2.875rem 0 3.25rem;
+	padding: 1.5rem 0;
+	@media (min-width: $md3) {
+		padding: 2.875rem 0 3.25rem;
+	}
 	// .promo__container
 	&__container {
 	}
@@ -411,18 +414,24 @@
 			display: none;
 		}
 	}
+	&__pagination {
+		@media (min-width: $md5) {
+			display: none;
+		}
+	}
 }
 
-.doctor {
+.doctor-card {
 	height: auto;
 	display: flex;
 	flex-direction: column;
 
-	// .doctor__image
+	// .doctor-card__image
 	&__image {
 		position: relative;
 		border-radius: 1.25rem;
 		overflow: hidden;
+		aspect-ratio: math.div(411, 491);
 		@media (any-hover: hover) {
 			&:hover {
 				& img {
@@ -436,7 +445,7 @@
 			will-change: transform;
 		}
 	}
-	// .doctor__label
+	// .doctor-card__label
 	&__label {
 		position: absolute;
 		bottom: rem(21);
@@ -447,14 +456,14 @@
 		background: #fff;
 		color: #0739a6;
 	}
-	// .doctor__body
+	// .doctor-card__body
 	&__body {
 		margin-top: 1.25rem;
 		flex: 1 1 auto;
 		display: flex;
 		flex-direction: column;
 	}
-	// .doctor__name
+	// .doctor-card__name
 	&__name {
 		font-size: 1.375rem;
 		font-weight: 500;
@@ -465,25 +474,25 @@
 			}
 		}
 	}
-	// .doctor__position
+	// .doctor-card__position
 	&__position {
 		margin-top: 0.5rem;
 		color: #0739a6;
 		font-size: 1rem;
 		font-weight: 500;
 	}
-	// .doctor__specialization
+	// .doctor-card__specialization
 	&__specialization {
 		margin-top: 1.44rem;
 		margin-bottom: auto;
 	}
-	// .doctor__specialization-title
+	// .doctor-card__specialization-title
 	&__specialization-title {
 		color: #000;
 		font-size: 0.875rem;
 		font-weight: 500;
 	}
-	// .doctor__specialization-items
+	// .doctor-card__specialization-items
 	&__specialization-items {
 		margin-top: 0.63rem;
 		margin-bottom: auto;
@@ -491,7 +500,7 @@
 		flex-wrap: wrap;
 		gap: rem(10);
 	}
-	// .doctor__specialization-item
+	// .doctor-card__specialization-item
 	&__specialization-item {
 		color: #2a2a2a;
 		padding: 0.56rem 1.16rem;
@@ -505,7 +514,7 @@
 			}
 		}
 	}
-	// .doctor__btn
+	// .doctor-card__btn
 	&__btn {
 		margin-top: 2.5rem;
 		padding-block: 0.75rem;
@@ -557,6 +566,11 @@
 	// .reviews__next
 	&__next {
 		@media (max-width: $md5) {
+			display: none;
+		}
+	}
+	&__pagination {
+		@media (min-width: $md5) {
 			display: none;
 		}
 	}
@@ -886,8 +900,10 @@
 	&__map {
 		position: relative;
 		& iframe {
-			min-height: 100%;
 			border-radius: 1.25rem;
+			width: 100%;
+			height: 100%;
+			min-height: rem(400);
 		}
 	}
 	// .contacts__image
@@ -900,6 +916,7 @@
 			top: -1.31rem;
 			right: -1.37rem;
 		}
+
 		& img {
 			width: 7.5rem;
 			height: 5rem;

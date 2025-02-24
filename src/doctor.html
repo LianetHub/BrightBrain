@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Страница врача'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">
+                                    Все врачи
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link active">
+                                    Гнитий Виктория Сергеевна
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="doctor">
+                    <div class="doctor__container">
+                        <div class="doctor__content">
+                            <aside class="doctor__side">
+                                <div class="doctor__image">
+                                    <img src="@img/doctors/gnitiy-victoria-sergeevna.jpg" class="cover-image" alt="Фото доктора">
+                                </div>
+                                <a href="#callback" data-fancybox class="doctor__btn btn btn-primary btn-fullwidth btn-lg">Записаться на прием</a>
+                                <div class="doctor__phone">
+                                    <div class="doctor__phone-text">Или по телефону:</div>
+                                    <a href="tel:+78126067796" class="doctor__phone-link icon-phone">+7 (812) 606-77-96</a>
+                                </div>
+                            </aside>
+                            <div class="doctor__body">
+                                <h1 class="doctor__title title">Гнитий Виктория Сергеевна</h1>
+                                <p class="doctor__position">Врач-психиатр</p>
+                                <div class="doctor__desc">
+                                    <div class="doctor__block icon-doctor-bag">
+                                        <h3>Опыт: <span class="color-accent">более 5 лет</span></h3>
+                                        <p>Практика работы на базе нескольких лечебных учреждений:</p>
+                                        <ul>
+                                            <li>СПб ГБУЗ ПНД №9, медико-реабилитационное отделение.</li>
+                                            <li>ФКУ “Главное бюро МСЭ” Минтруда России.</li>
+                                            <li>СПб ГБУЗ “Психиатрическая больница №1 им. П.П. Кащенко.”</li>
+                                        </ul>
+                                        <p>С 2023 года – врач-психиатр клиники ментального здоровья “Bright Brain”.</p>
+                                    </div>
+                                    <div class="doctor__block icon-instruments">
+                                        <h3>Зона клинических интересов</h3>
+                                        <ul>
+                                            <li>Расстройства зрелой личности и поведения у взрослых.</li>
+                                            <li>Невротические и соматоформные расстройства:</li>
+                                            <li>Тревожно-фобическое расстройство.</li>
+                                            <li>Обсессивно-компульсивное расстройство (ОКР).</li>
+                                            <li>Генерализованное тревожное расстройство.</li>
+                                            <li>Ипохондрическое расстройство и другие.</li>
+                                            <li>Аффективные расстройства:</li>
+                                            <li>Депрессия различной степени тяжести.</li>
+                                            <li>Биполярное аффективное расстройство (БАР).</li>
+                                            <li>Циклотимия и другие.</li>
+                                            <li>Расстройства шизофренического спектра и другие психотические расстройства.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="doctor__block icon-education">
+                                        <h3>Образование и сертификаты</h3>
+                                        <p>2012–2018 – ФГБОУ ВО “Саратовский государственный медицинский университет им. В.И. Разумовского” Минздрава России, лечебный факультет.</p>
+                                        <p>2018–2020 – ФГБУ ДПО “Санкт-Петербургский институт усовершенствования врачей-экспертов” Минтруда России, клиническая ординатура по специальности “психиатрия”.</p>
+                                    </div>
+                                    <div class="doctor__block icon-schedule">
+                                        <h3>Запись на прием</h3>
+                                        <img src="@img/widget.png" alt="widget">
+                                    </div>
+                                    <div class="doctor__block icon-schedule">
+                                        <h3>Подход к работе с пациентами</h3>
+                                        <blockquote>
+                                            <p>Виктория Сергеевна – чуткий и внимательный врач, который всегда ставит интересы пациента на первое место. Её тёплый, неформальный подход помогает людям чувствовать себя комфортно и открыто говорить о своих переживаниях. Она умеет выстраивать доверительные отношения, благодаря чему пациенты не боятся обращаться за помощью даже в самых сложных ситуациях.</p>
+                                            <p>Благодаря своей эмпатии и способности слышать пациента, Виктория Сергеевна тщательно подбирает подходы к лечению, основываясь на индивидуальных особенностях каждого человека. Её цель – не только устранить симптомы, но и помочь пациенту почувствовать себя лучше, вернуться к привычной жизни и обрести уверенность в будущем.</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_reviews.html', {
+                "title": "Отзывы о враче",
+                "hasBtn": false
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

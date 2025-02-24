@@ -1,0 +1,125 @@
+.price {
+	padding-top: 4.92rem;
+	padding-bottom: 4.94rem;
+	// .price__container
+	&__container {
+	}
+	// .price__title
+	&__title {
+		& + .price__table {
+			margin-top: 2rem;
+		}
+	}
+	// .price__subtitle
+	&__subtitle {
+		margin-top: 1rem;
+		font-size: 1rem;
+		line-height: 137.5%;
+	}
+	// .price__blocks
+	&__blocks {
+		margin-top: 3.65rem;
+	}
+	// .price__block
+	&__block {
+		&:not(:last-child) {
+			margin-bottom: 4rem;
+		}
+	}
+	// .price__caption
+	&__caption {
+		font-family: $font-gilroy;
+		font-size: 1.75rem;
+		font-weight: 500;
+	}
+	// .price__row
+	&__row {
+		margin-top: 2.5rem;
+		display: flex;
+		align-items: flex-start;
+		gap: 2rem;
+		flex-direction: column;
+		@media (min-width: $md4) {
+			flex-direction: row;
+		}
+		@media (min-width: $md3) {
+			gap: 7rem;
+		}
+	}
+	// .price__desc
+	&__desc {
+		font-size: 1rem;
+		line-height: 137.5%;
+	}
+	// .price__btn
+	&__btn {
+		margin-top: 0.25rem;
+		flex-shrink: 0;
+		font-size: 1.25rem;
+		min-width: 100%;
+		@media (min-width: $md5) {
+			min-width: 18.9375rem;
+		}
+	}
+	// .price__table
+	&__table {
+		margin-top: 3.25rem;
+	}
+	&__note {
+		margin-top: 4.94rem;
+		font-size: 1rem;
+		line-height: 137.5%;
+	}
+}
+
+.table {
+	& table {
+		width: 100%;
+		@media (min-width: $md5) {
+			font-size: 1.125rem;
+		}
+		& th {
+			background: #0739a6;
+			color: #fff;
+
+			text-align: left;
+			padding: 0.75rem;
+			@media (min-width: $md4) {
+				padding: 0.75rem 3rem;
+			}
+			font-weight: 400;
+			&:first-child {
+				border-radius: 0.625rem 0 0rem 0rem;
+			}
+			&:last-child {
+				border-radius: 0 0.625rem 0rem 0rem;
+			}
+		}
+		& tr {
+			border: rem(1) solid #f7f9ff;
+			background: #f5fdfd;
+			color: #000;
+			font-weight: 300;
+
+			&:nth-child(even) {
+				background: #fff;
+			}
+			& td {
+				padding: 0.75rem;
+				@media (min-width: $md4) {
+					padding: 0.75rem 3rem;
+				}
+			}
+			&:last-child {
+				td {
+					&:first-child {
+						border-radius: 0 0rem 0rem 0.625rem;
+					}
+					&:last-child {
+						border-radius: 0 0rem 0.625rem 0rem;
+					}
+				}
+			}
+		}
+	}
+}

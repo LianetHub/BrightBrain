@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Контакты'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 1
+            })
+            <main class="page">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="" class="breadcrumbs__link">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link active">
+                                    Лечение депрессии
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="service">
+                    <div class="service__container">
+                        <div class="service__body">
+                            <div class="service__offer">
+                                <h1 class="service__title title-lg">
+                                    Лечение депрессии <br>
+                                    в <span class="color-accent">Санкт-Петербурге</span>
+                                </h1>
+                                <p class="service__subtitle">
+                                    В клинике Bright Brain мы помогаем пациентам выйти из состояния апатии, вернуть эмоциональную стабильность и обрести желание жить полной жизнью.
+                                </p>
+                                <a href="#callback" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться на прием</a>
+                                <div class="service__labels">
+                                    <a href="" class="service__label">Общая информация</a>
+                                    <a href="" class="service__label">Стоимость лечения</a>
+                                    <a href="" class="service__label">Врачи и персонал</a>
+                                    <a href="" class="service__label">Отзывы</a>
+                                </div>
+                            </div>
+                            <div class="service__image">
+                                <img src="@img/depression.jpg" alt="Фото человека с депрессией">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_doctors.html', {
+                "title": "Специалисты направления"
+                })
+                <section class="price">
+                    <div class="price__container">
+                        <h2 class="price__title title">Стоимость услуг</h2>
+                        <div class="price__table table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Наименование услуги</th>
+                                        <th>Цена</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Первичный прием (консультация) врача психиатра (до 60 мин)</td>
+                                        <td><span class="fw-medium">6000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Первичный прием (консультация) врача психиатра (до 60 мин)</td>
+                                        <td><span class="fw-medium">6000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Первичный прием (консультация) врача психиатра (до 60 мин)</td>
+                                        <td><span class="fw-medium">6000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Первичный прием (консультация) врача психиатра (до 60 мин)</td>
+                                        <td><span class="fw-medium">6000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Первичный прием (консультация) врача психиатра (до 60 мин)</td>
+                                        <td><span class="fw-medium">6000</span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

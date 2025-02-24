@@ -1,0 +1,45 @@
+.breadcrumbs {
+	padding: 1.5rem 0;
+	@media (min-width: $md3) {
+		padding: 2.5rem 0;
+	}
+	& + .price {
+		padding-top: 0;
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	// .breadcrumbs__item
+	&__item {
+		display: flex;
+		align-items: center;
+		color: #0739a6;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 150%;
+		&:not(:last-child) {
+			&::before {
+				margin: 0 0.75rem;
+				font-size: rem(10);
+				color: currentColor;
+				order: 1;
+				transform: rotate(-90deg);
+				@extend %ic, .icon-chevron;
+			}
+		}
+	}
+	// .breadcrumbs__link
+	&__link {
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #2b2b2b;
+			}
+		}
+		&.active {
+			color: #2b2b2b;
+			pointer-events: none;
+		}
+	}
+}

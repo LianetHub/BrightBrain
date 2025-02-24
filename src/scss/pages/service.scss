@@ -1,0 +1,32 @@
+.service {
+	background: #fff;
+	// .service__container
+	&__container {
+	}
+	// .service__body
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	// .service__offer
+	&__offer {
+	}
+	// .service__title
+	&__title {
+	}
+	// .service__subtitle
+	&__subtitle {
+	}
+	// .service__btn
+	&__btn {
+	}
+	// .service__labels
+	&__labels {
+	}
+	// .service__label
+	&__label {
+	}
+	// .service__image
+	&__image {
+	}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Страница врача'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 5
+            })
+            <main class="page">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <div class="breadcrumbs__container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link active">
+                                    Блог
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="blog">
+                    <div class="blog__container">
+                        <h2 class="blog__title title">Блог</h2>
+                        <p class="blog__subtitle">Ментальное здоровье, эмоциональные проблемы и методы их решения. Только научно-доказанная информация, проверенная нашими психологами и психиатрами, читайте в блоге сайта Bright Brain</p>
+                        <ul class="blog__list">
+                            @@loop('./html/templates/_blog-article.html', './html/json/blog-items.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

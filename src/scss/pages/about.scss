@@ -1,17 +1,29 @@
 .about {
 	background: #fff;
 	display: flex;
+	flex-direction: column;
+	@media (min-width: $md4) {
+		flex-direction: row;
+	}
 	// .about__wrapper
 	&__wrapper {
-		flex: 0 0 100%;
+		@media (min-width: $md4) {
+			flex: 0 0 100%;
+		}
 	}
 	// .about__container
 	&__container {
 	}
 	// .about__content
 	&__content {
-		width: 50%;
-		padding: 4.56rem 5rem 5.37rem 0;
+		padding: 2rem 0;
+		@media (min-width: $md4) {
+			width: 50%;
+			padding: 4.56rem 2rem 5.37rem 0;
+		}
+		@media (min-width: $md1) {
+			padding: 4.56rem 5rem 5.37rem 0;
+		}
 	}
 	// .about__title
 	&__title {
@@ -26,9 +38,17 @@
 	// .about__image
 	&__image {
 		position: relative;
-		flex: 0 0 50%;
-		padding-left: 7.5rem;
-		transform: translateX(-100%);
+		& > img {
+			min-height: rem(320);
+		}
+		@media (min-width: $md4) {
+			flex: 0 0 50%;
+			padding-left: 2rem;
+			transform: translateX(-100%);
+		}
+		@media (min-width: $md1) {
+			padding-left: 7.5rem;
+		}
 	}
 	// .about__rate
 	&__rate {
@@ -43,18 +63,15 @@
 		flex-shrink: 0;
 		z-index: 2;
 		position: absolute;
-		bottom: 2rem;
-		right: 50%;
-		transform: translateX(50%);
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
 		@media (min-width: $md4) {
-			right: 2rem;
+			left: 0;
 			transform: none;
 		}
 		@media (min-width: $md1) {
-			bottom: auto;
-			right: auto;
-			position: relative;
-			margin-right: -3.2rem;
+			left: 5.5rem;
 		}
 	}
 	// .about__rate-company
@@ -62,12 +79,278 @@
 	}
 	// .about__rate-stars
 	&__rate-stars {
+		margin-top: 0.5rem;
 		display: flex;
+		gap: 0.25rem;
+		font-size: 0.75rem;
 	}
 	// .about__rate-star
 	&__rate-star {
+		color: #f5ba3a;
 	}
 	// .about__rate-quantity
 	&__rate-quantity {
+		margin-top: 0.5rem;
+		font-size: 1rem;
+	}
+}
+
+.desc {
+	padding: 2.5rem 0 1.625rem;
+	@media (min-width: $md5) {
+		padding: 3.5rem 0 2.625rem;
+	}
+	// .desc__container
+	&__container {
+	}
+	// .desc__body
+	&__body {
+		border-radius: 1.25rem;
+		background: #fff;
+		box-shadow: $shadow;
+		padding: 1.5rem 1rem;
+		@media (min-width: $md5) {
+			padding: 3.87rem 4.19rem 4.5rem;
+		}
+	}
+	// .desc__title
+	&__title {
+		font-family: $font-gilroy;
+		font-size: 1.75rem;
+		font-weight: 500;
+	}
+	// .desc__text
+	&__text {
+		margin-top: 2rem;
+		display: grid;
+		gap: 2rem;
+		color: #2b2b2b;
+		font-size: 1rem;
+		line-height: 137.5%;
+		@media (min-width: $md4) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+.dignity {
+	padding: 1.625rem 0;
+	@media (min-width: $md5) {
+		padding: 2.625rem 0;
+	}
+	// .dignity__container
+	&__container {
+	}
+	// .dignity__title
+	&__title {
+		@extend .desc__title;
+	}
+	// .dignity__list
+	&__list {
+		margin-top: 3.62rem;
+		display: grid;
+		gap: 1.25rem;
+		@media (min-width: $md4) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: $md2) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	// .dignity__item
+	&__item {
+		border-radius: 1.25rem;
+		background: #fff;
+		box-shadow: $shadow;
+		padding: 1.81rem;
+	}
+	// .dignity__icon
+	&__icon {
+	}
+	// .dignity__item-caption
+	&__item-caption {
+		margin-top: 1.19rem;
+		color: #000;
+		font-weight: 500;
+		font-size: 1.125rem;
+	}
+	// .dignity__item-desc
+	&__item-desc {
+		margin-top: 0.69rem;
+		color: #000;
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}
+
+.media {
+	padding: 2rem 0;
+	@media (min-width: $md5) {
+		padding: 2.75rem 0;
+	}
+	// .media__container
+	&__container {
+	}
+	// .media__title
+	&__title {
+		@extend .desc__title;
+	}
+	// .media__videos
+	&__videos {
+		display: grid;
+		gap: 1.54rem;
+		margin-top: 2rem;
+		@media (min-width: $md4) {
+			margin-top: 3.31rem;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	// .media__video
+	&__video {
+		border-radius: 0.625rem;
+		overflow: hidden;
+		aspect-ratio: 16 / 9;
+		& img {
+			border-radius: 0.625rem;
+			will-change: transform;
+			transition: transform 0.12s ease;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				& img {
+					transform: scale(1.025);
+				}
+			}
+		}
+	}
+}
+
+.docs {
+	padding: 2rem 0;
+	@media (min-width: $md5) {
+		padding: 4rem 0;
+	}
+	// .docs__container
+	&__container {
+	}
+	// .docs__title
+	&__title {
+		@extend .desc__title;
+	}
+	// .docs__body
+	&__body {
+	}
+
+	// .docs__spollers
+	&__spollers {
+		margin-top: 3rem;
+	}
+	// .docs__spoller
+	&__spoller {
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+			@media (min-width: $md5) {
+				margin-bottom: 1.88rem;
+			}
+		}
+	}
+	// .docs__spoller-title
+	&__spoller-title {
+		border-radius: 0.625rem;
+		background: #fff;
+		box-shadow: $shadow;
+		color: #323232;
+		font-family: $font-gilroy;
+		font-weight: 500;
+		padding: em(1.5, 1.25) em(2.88, 1.25);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 0.875rem;
+		@media (min-width: $md4) {
+			font-size: 1.25rem;
+		}
+		cursor: pointer;
+		&::after {
+			content: "+";
+			font-size: em(2.625, 1.25);
+			font-weight: 400;
+			color: #0739a6;
+			transition: transform 0.3s ease 0s;
+		}
+		&._active {
+			&::after {
+				content: "-";
+				transform: rotate(360deg);
+			}
+		}
+	}
+	// .docs__spoller-body
+	&__spoller-body {
+		margin-top: 1.69rem;
+	}
+	// .docs__spoller-list
+	&__spoller-list {
+	}
+	// .docs__spoller-item
+	&__spoller-item {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		@media (min-width: $md4) {
+			gap: 1.81rem;
+		}
+		&:not(:last-child) {
+			margin-bottom: 1.31rem;
+		}
+	}
+	// .docs__spoller-icon
+	&__spoller-icon {
+		width: 2.3125rem;
+		height: 2.3125rem;
+		flex-shrink: 0;
+		color: #0739a6;
+	}
+	// .docs__spoller-text
+	&__spoller-text {
+		max-width: 40.125rem;
+		color: #444;
+		line-height: 150%;
+		font-size: 0.875rem;
+		@media (min-width: $md4) {
+			font-size: 1.125rem;
+		}
+	}
+	// .docs__spoller-desc
+	&__spoller-desc {
+		margin-top: 2.2rem;
+		color: #000;
+		line-height: 150%;
+		font-size: 0.75rem;
+		@media (min-width: $md4) {
+			font-size: 1rem;
+		}
+	}
+	// .docs__spoller-download
+	&__spoller-download {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		font-size: 0;
+		color: #0739a6;
+		@media (min-width: $md5) {
+			font-size: 1.125rem;
+		}
+		&::before {
+			width: 1.5rem;
+			height: 1.5rem;
+			font-size: 1.5rem;
+			flex-shrink: 0;
+			order: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 }

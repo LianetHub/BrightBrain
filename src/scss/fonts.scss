@@ -1,11 +1,4 @@
 @font-face {
-                            font-family: 'icons';
-                            font-display: swap;
-                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
-                            font-weight: 400;
-                            font-style: normal;
-                        }
-@font-face {
                             font-family: 'Gilroy';
                             font-display: swap;
                             src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
@@ -13,10 +6,17 @@
                             font-style: normal;
                         }
 @font-face {
+                            font-family: 'icons';
+                            font-display: swap;
+                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+@font-face {
                             font-family: 'Onest';
                             font-display: swap;
-                            src: url("../fonts/Onest-Light.woff") format("woff"), url("../fonts/Onest-Light.woff2") format("woff2");
-                            font-weight: 300;
+                            src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
+                            font-weight: 400;
                             font-style: normal;
                         }
 @font-face {
@@ -29,8 +29,8 @@
 @font-face {
                             font-family: 'Onest';
                             font-display: swap;
-                            src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
-                            font-weight: 400;
+                            src: url("../fonts/Onest-Light.woff") format("woff"), url("../fonts/Onest-Light.woff2") format("woff2");
+                            font-weight: 300;
                             font-style: normal;
                         }
 @font-face {

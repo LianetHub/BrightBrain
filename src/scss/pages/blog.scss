@@ -144,6 +144,7 @@
 	}
 	// .article__body
 	&__body {
+		flex: 1 1 auto;
 		margin-top: 2rem;
 		padding: 2.5rem 1.5rem;
 		@media (min-width: $md4) {
@@ -238,5 +239,116 @@
 				color: darken($color: #0739a6, $amount: 20);
 			}
 		}
+	}
+	// .article__content
+	&__content {
+		display: flex;
+		gap: rem(20);
+		padding: 3.81rem 0 0 0;
+		flex-direction: column-reverse;
+		@media (min-width: $md3) {
+			flex-direction: row;
+		}
+		.article__body {
+			margin-top: 0;
+			flex: 1 1 auto;
+		}
+	}
+	// .article__sidebar
+	&__sidebar {
+		@media (min-width: $md3) {
+			flex: 0 0 calc(33.3333% - rem(10));
+		}
+	}
+	// .article__nav
+	&__nav {
+		border-radius: 1.25rem;
+		background: #fff;
+		padding: 1.5rem 1rem;
+		@media (min-width: $md5) {
+			padding: 2.94rem 1.44rem 2.94rem 2.62rem;
+		}
+	}
+	// .article__nav-caption
+	&__nav-caption {
+		color: #0739a6;
+		font-size: 1.125rem;
+		font-weight: 600;
+		line-height: 138%;
+		margin-bottom: 2.75rem;
+	}
+	// .article__nav-list
+	&__nav-list {
+		color: #262626;
+		font-size: 1.125rem;
+		line-height: 119.023%;
+		& li {
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+				@media (min-width: $md5) {
+					margin-bottom: 1.69rem;
+				}
+			}
+			& a {
+				transition: color 0.3s ease;
+				@media (any-hover: hover) {
+					&:hover {
+						color: $accent;
+					}
+				}
+				&.active {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	// .article__review
+	&__review {
+		@media (min-width: $md5) {
+			border-radius: 1.25rem;
+			background: #f7f9ff;
+			padding: 2.44rem 2.62rem;
+		}
+	}
+	// .article__review-header
+	&__review-header {
+		display: flex;
+		align-items: center;
+		gap: 0.88rem;
+		color: #0739a6;
+		font-family: $font-gilroy;
+		font-weight: 500;
+		line-height: 138%;
+		font-size: 1.25rem;
+		@media (min-width: $md5) {
+			font-size: 1.75rem;
+		}
+		&::before {
+			width: 2.5rem;
+			height: 2.5rem;
+			font-size: 1.5rem;
+			@media (min-width: $md5) {
+				width: 3.9375rem;
+				height: 3.9375rem;
+				font-size: 2.5rem;
+			}
+			border-radius: 50%;
+			flex-shrink: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #0739a6;
+			color: #fff;
+		}
+	}
+	// .article__review-rate
+	&__review-rate {
+		width: fit-content;
+	}
+	// .article__review-quote
+	&__review-quote {
+		margin-top: 2.27rem;
+		color: #2b2b2b;
+		font-size: 1.25rem;
 	}
 }

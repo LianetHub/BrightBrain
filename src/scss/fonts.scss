@@ -1,11 +1,4 @@
 @font-face {
-                            font-family: 'icons';
-                            font-display: swap;
-                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
-                            font-weight: 400;
-                            font-style: normal;
-                        }
-@font-face {
                             font-family: 'Gilroy';
                             font-display: swap;
                             src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
@@ -34,10 +27,10 @@
                             font-style: normal;
                         }
 @font-face {
-                            font-family: 'Onest';
+                            font-family: 'icons';
                             font-display: swap;
-                            src: url("../fonts/Onest-Medium.woff") format("woff"), url("../fonts/Onest-Medium.woff2") format("woff2");
-                            font-weight: 500;
+                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+                            font-weight: 400;
                             font-style: normal;
                         }
 @font-face {
@@ -45,5 +38,12 @@
                             font-display: swap;
                             src: url("../fonts/Proxima-Nova-Semibold.woff") format("woff"), url("../fonts/Proxima-Nova-Semibold.woff2") format("woff2");
                             font-weight: 400;
+                            font-style: normal;
+                        }
+@font-face {
+                            font-family: 'Onest';
+                            font-display: swap;
+                            src: url("../fonts/Onest-Medium.woff") format("woff"), url("../fonts/Onest-Medium.woff2") format("woff2");
+                            font-weight: 500;
                             font-style: normal;
                         }

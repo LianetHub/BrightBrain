@@ -712,6 +712,9 @@
 			font-size: 1.5rem;
 		}
 	}
+	&__name {
+		@extend .review__email;
+	}
 	// .review__time
 	&__time {
 		@media (min-width: $md5) {

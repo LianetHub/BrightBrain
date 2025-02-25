@@ -1,32 +1,72 @@
 .service {
 	background: #fff;
+
 	// .service__container
 	&__container {
 	}
 	// .service__body
 	&__body {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		gap: 2rem;
+		@media (min-width: $md3) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 	// .service__offer
 	&__offer {
+		padding: 2rem 0;
+		@media (min-width: $md5) {
+			padding: 4rem 0;
+		}
 	}
 	// .service__title
 	&__title {
 	}
 	// .service__subtitle
 	&__subtitle {
+		margin-top: 1.25rem;
+		color: #000;
+		font-size: 1.125rem;
+		font-weight: 300;
+		max-width: 36.5rem;
+		line-height: 1.3;
 	}
 	// .service__btn
 	&__btn {
+		margin-top: 1.62rem;
+		min-height: 3.875rem;
 	}
 	// .service__labels
 	&__labels {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-top: 2rem;
+		@media (min-width: $md5) {
+			margin-top: 3.81rem;
+			gap: 1rem;
+		}
 	}
 	// .service__label
 	&__label {
+		border-radius: 3.75rem;
+		background: #f8f9fc;
+		color: #2a2a2a;
+		padding: 0.63rem rem(24);
+		@media (min-width: $md5) {
+			padding: 0.63rem rem(32);
+			font-size: 1.125rem;
+		}
+		transition: background-color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: darken($color: #f8f9fc, $amount: 10);
+			}
+		}
 	}
 	// .service__image
 	&__image {
+		align-self: end;
 	}
 }
